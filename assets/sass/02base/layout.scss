@@ -1,0 +1,53 @@
+/*- BASE Layout - We use Susy for our grids. http://susy.oddbird.net.
+ *
+ *  @include container(min-width cols max-width)
+ *  define this item as a container. all variables are optional
+ *
+ *  @include span-columns($columns omega,$total-columns,$padding)
+ *  set the column width of the item and if it's the last, omega flips float
+ *  total columns can override the variable below and padding applies
+ *  padding on the column item
+ *
+ *  @include nth-omega($n)
+ *  replace with an nth-child formulas to add omega as an override to
+ *  repeating elements
+ *
+ *  @include at-breakpoint(min-width cols max-width) { @content }
+ *  redefine the container media layout for a given breakpoint
+ *
+ *  @include with-grid-settings($columns, $width, $gutter, $padding) { @content }
+ *  this will override the default settings in specific cases
+ *
+ *  @include prefix($columns)
+ *  padding - add this many columns of space before column
+ *
+ *  @include suffix($columns)
+ *  padding - add this many columns of space before column
+ *
+ *  @include pad($before, $after)
+ *  padding - adds both prefix and suffix columns
+ *
+ *  @include bleed($before, $after)
+ *  padding - pad in reverse, adds negative margins to have this column bleed out of grid
+ *
+ *  @include pre($columns)
+ *  margin - add columns of empty space before the column
+ *
+ *  @include post($columns)
+ *  margin - add columns of empty space after the column
+ *
+ *  @include squish($before, after)
+ *  margin - adds both pre and post columns
+ *
+ *  @include push($columns)
+ *  margin - same as pre
+ *
+ *  @include pull($columns)
+ *  margin - negative margins before hand to pull it (half of bleed)
+ *
+ ----------------------------------------------------------------------*/
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters

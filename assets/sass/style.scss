@@ -1,0 +1,101 @@
+/* ******************************************************************************
+ *
+ * Compass Setup
+ *
+ * First, let's include our Compass mixins. Add or remove as needed. See
+ * http://compass-style.org for compass documentation.
+ *
+ * The first include is a file where we can override any of the Compass defaults
+ * we would like to change on a project wide basis.
+ *
+ ****************************************************************************** */
+
+@import "01helpers/compass-variables";
+
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/layout/stretching";
+@import "compass/utilities/color";
+@import "compass/utilities/general/float";
+@import "compass/utilities/general/min";
+@import "compass/utilities/general/reset";
+
+@import "01helpers/susy/support";
+@import "01helpers/susy/units";
+@import "01helpers/susy/settings";
+@import "01helpers/susy/functions";
+@import "01helpers/susy/grid";
+@import "01helpers/susy/isolation";
+@import "01helpers/susy/padding";
+@import "01helpers/susy/margin";
+@import "01helpers/susy/media";
+@import "01helpers/susy/background";
+
+/* ******************************************************************************
+ *
+ * Project Helpers
+ *
+ * Sass helper files (variables, mixins, functions, etc.)
+ *
+ ****************************************************************************** */
+
+@import "01helpers/functions";
+@import "01helpers/variables";
+@import "01helpers/mixins";
+@import "01helpers/extends";
+@import "01helpers/reset-addons";
+
+/* ******************************************************************************
+ *
+ * Project Base
+ *
+ * Base layout and typography files
+ *
+ ****************************************************************************** */
+
+@import "02base/general";
+@import "02base/layout";
+@import "02base/type";
+
+/* ******************************************************************************
+ *
+ * Project components
+ *
+ * Buttons, forms, alerts, lists, nav, tables, etc. Anything that is a single
+ * component used throughout the site.
+ *
+ ****************************************************************************** */
+
+@import "03components/alerts";
+@import "03components/buttons";
+@import "03components/forms";
+@import "03components/lists";
+@import "03components/tables";
+
+/* ******************************************************************************
+ *
+ * Project Modules
+ *
+ * Sections that make up the site. Header, footer, sidebar, nav, etc.
+ *
+ ****************************************************************************** */
+
+@import "04modules/footer";
+@import "04modules/header";
+@import "04modules/nav";
+@import "04modules/sidebar";
+
+/* ******************************************************************************
+ *
+ * Project specific files
+ *
+ * Now's the time to starty building the site. The sass folder should structured
+ *
+ * Our goal is to load up to three stylesheets on every page. reset.css, style.css
+ * and finally a name-spaced css file depending on the site section we're in,
+ * containing section specific code, such as blog.css, podcast.css, etc.
+ *
+ * No style rules should be built here. They should all be broken out into specific
+ * SASS partials.
+ *
+ ****************************************************************************** */
