@@ -1,8 +1,12 @@
+/**************************************************
+ COMPASS RESET
+**************************************************/
+
 @include global-reset;
 
-/*- Other items we want to include in a reset that aren't included
- *  in Compass' default reset.
-----------------------------------------------------------------------*/
+/**************************************************
+ ADDITIONAL RESET STYLES
+**************************************************/
 
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
@@ -46,23 +50,3 @@ button { width: auto; overflow: visible; }
 button, input, select, textarea { margin: 0; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-*, *:after, *:before { @include box-sizing(border-box); }
-
-/*- CLEAR FIX If you don't want to apply a group class to the HTML
- *  element you can always use "@extend .group;" on it unless it's
- *  inside a media query.
-----------------------------------------------------------------------*/
-
-.group {
-  zoom: 1; /* For IE 7 (trigger hasLayout) */
-  &:before,
-  &:after {
-    display:table;
-    visibility:hidden;
-    content:"";
-  }
-  &:after {
-    clear:both;
-  }
-}

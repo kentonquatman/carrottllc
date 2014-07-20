@@ -1,123 +1,60 @@
-/* ******************************************************************************
- *
- * Default type styles
- *
- ****************************************************************************** */
+/**************************************************
+ DEFAULT TYPE STYLES
+**************************************************/
 
 h1, h2, h3, h4, h5, h6 {
-}
-
-h1, h2, h3 {
-  @include font($headline-font,700);
+  font-family: $headline-font;
 }
 
 h1 {
-  @include font-size(32);
+  @include font-size(42);
 }
 
 h2 {
-  @include font-size(24);
+  @include font-size(36);
 }
 
 h3 {
-  @include font-size(18);
+  @include font-size(24);
 }
 
-h4 {
-}
-
-h4, h5 {
-}
-
-h4, h5, h6 {
-}
-
-h5 {
-}
-
-h5, h6 {
-}
-
-h6 {
+%base-type {
+  @include font-size(16);
+  line-height: 1.4;
 }
 
 p {
-  @include font-size(14);
-  margin: 0 0 1em;
+  @extend %base-type;
+  margin-bottom: 1em;
 }
 
-ol {
-  list-style-type: decimal;
-  li {
-  }
+li {
+  @extend %base-type;
+  margin-bottom: .25em;
 }
 
+ol { list-style: decimal; }
+ul { list-style: square; }
+
+ol, 
 ul {
-  list-style-type: square;
-  li {
-  }
-}
-
-ul, ol {
-  margin: 1em 0 1em 1.75em;
-  li {
-    @extend p;
-    margin-bottom: 0.3em;
-  }
-  nav & {
-    list-style-type: none;
-    margin: 0;
-  }
-}
-
-blockquote {
-  p {
-    font-size: 1em;
-    margin: 0;
-  }
-}
-
-small {
-}
-
-mark {
-}
-
-b, strong {
-}
-
-i, em {
-}
-
-ins, u {
-}
-
-del, s {
-}
-
-abbr {
-}
-
-sup, sub {
-}
-
-sup {
-}
-
-sub {
-}
-
-time {
+  margin: 1em 0 1em 2.5em;
 }
 
 address {
+  @extend %base-type;
 }
 
-code, pre {
-}
+/**************************************************
+ DEFAULT LINK STYLES
+**************************************************/
 
-code {
-}
-
-pre {
+a {
+  @include transition;
+  color: $link-color;
+  text-decoration: none;
+  &:hover, 
+  &:focus {
+    color: $link-hover;
+  }
 }

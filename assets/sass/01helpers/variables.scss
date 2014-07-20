@@ -1,59 +1,79 @@
-/* ******************************************************************************
- *
- * Font Stacks
- *
- ****************************************************************************** */
+/**************************************************
+ FONT STACKS
+**************************************************/
 
+$serif: 'Georgia', serif;
 $sans-serif: 'Helvetica Neue', Helmet, Freesans, sans-serif;
 $monospace: 'courier new', monospace, serif;
 
-/* ******************************************************************************
- *
- * Font Usage
- *
- ****************************************************************************** */
+$playfair: playfair-display, serif;
 
-$body-font: $sans-serif;
-$headline-font: $sans-serif;
+/**************************************************
+ FONTS IN USE
+**************************************************/
+
+$body-font: $serif;
+$headline-font: $playfair;
+$nav-font: $playfair;
+$button-font: $playfair;
 $code-font: $monospace;
 
-/* ******************************************************************************
- *
- * Colors
- *
- * By Color Name
- *
- ****************************************************************************** */
+/**************************************************
+ COLOR PALETTE
+**************************************************/
 
-$black: #000;
+$black: #1a1a1a;
 $x-dk-gray: #333;
 $dk-gray: #666;
 $gray: #999;
-$lt-gray: #aaa;
-$x-lt-gray: #ddd;
+$lt-gray: #ccc;
+$x-lt-gray: #e6e6e6;
 $white: #fff;
 
-/* ******************************************************************************
- *
- * Colors
- *
- * By Usage Name, reference the color variables above, use the variables below
- * in the actual SASS partials throughout the site.
- *
- ****************************************************************************** */
+$blue: #0512ff;
+
+/**************************************************
+ COLORS IN USE
+**************************************************/
 
 $body-text: $black;
 $body-bg: $white;
 
 $selection-text: $black;
-$selection-bg: transparentize($lt-gray, 0.5);
+$selection-bg: transparentize($blue, 0.5);
+
+$link-color: $gray;
+$link-hover: $dk-gray;
 
 $border-color: $dk-gray;
 
-/* ******************************************************************************
- *
- * Site specific variables
- *
- ****************************************************************************** */
+/* Button Colors */
+$top-button-color: $white;
+$top-button-hover-color: $white;
+$top-button-bg: $blue;
+$top-button-hover-bg: $x-dk-gray;
+$top-button-border: darken($blue, 25%);
+$top-button-border-hover: $black;
+
+/* Header Colors */
+$boder-top: $x-lt-gray;
+$sub-head-color: $gray;
+
+/* Nav Colors */
+$nav-bar-bg: $x-dk-gray;
+$nav-link-hover: $blue;
+$nav-link-color: $white;
+
+/* About Colors */
+$about-bg: lighten($blue, 30%);
+$about-text: darken($blue, 30%);
+
+/* Footer Colors */
+$footer-bg: $blue;
+
+/**************************************************
+ SITE SPECIFIC VARIABLES
+**************************************************/
 
 $base-size: 10;
+$side-padding: 6em;

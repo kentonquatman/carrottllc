@@ -1,14 +1,11 @@
 /**************************************************
- FOOTER STYLES
+ ABOUT SECTION STYLES
 **************************************************/
 
-footer {
-  padding: 1.5em $side-padding;
-  background-color: $footer-bg;
-  .content {
+#about {
+  background-color: $about-bg;
+  color: $about-text;
+  article {
     @extend %site-col;
-  }
-  p {
-    margin: 0;
   }
 }

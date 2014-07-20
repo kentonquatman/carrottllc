@@ -1,18 +1,25 @@
-/* Declare a namespace for the site */
 var Site = window.Site || {};
-
 (function($) {
-
-  //same as $(document).ready();
   $(function() {
-
-    $('input, textarea').placeholder();
-
-    // replace inline svg files with png fallbacks, include parent container
-    // as selector(s) inside the parenthesis
-    svgReplace();
+  
+    // SMOOTH SCROLL
+    $('header nav a').smoothScroll({offset: -40});
+    $('.top-button').smoothScroll();
+    
+    // STICKY NAV BAR
+		$(function() {
+		  function stickyNav() {
+		    if ($(window).scrollTop() >= 440) {
+					$('header nav').addClass('sticky');
+					$('.top-button').removeClass('hide');
+		    }
+		    else {
+		      $('header nav').removeClass('sticky');
+		      $('.top-button').addClass('hide');
+				}
+		  }
+		  $(window).scroll(stickyNav);
+		});
 
   });
-
-
 })(jQuery);
