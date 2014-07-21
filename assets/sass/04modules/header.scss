@@ -4,12 +4,12 @@
 
 header {
   position: relative;
-  border-top: 10px solid $boder-top;
-  padding: 0 $side-padding 4.8em;
+  border-top: 10px solid $x-lt-gray;
+  padding-top: 15em;
+  padding-bottom: 15em;
   .content {
     @extend %clearfix;
     @extend %site-col;
-    padding: 18em 0;
   }
   h1 {
     @include float;
@@ -18,44 +18,63 @@ header {
     width: 290px;
     padding-top: 70px;
     background: url("../img/logo/carrottllc-logo.png") 0 0 no-repeat;
+    &:after {
+      display: none;
+    }
   }
-  h2 {
-    @include font-size(18);
-    margin: 36px 0 0 320px;
-    color: $sub-head-color;
+  aside {
+    margin-top: 1.9em;
+    margin-left: 324px;
+    padding-left: 3em;
+    border-left: 1px solid $lt-gray;
+    font-family: $playfair;
+    text-align: left;
+    p {
+      @include font-size(18);
+      margin: 0;
+      color: $gray;
+      line-height: 1.45;
+    }
   }
   nav {
+    @include transition;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $nav-bar-bg;
+    padding: 0 $side-padding;
+    background-color: $white;
+    border-top: 1px solid $x-lt-gray;
     &.sticky {
+      @include box-shadow(transparentize($black, .75) 0 0 30px);
       position: fixed;
+      z-index: 20;
       top: 0;
       bottom: auto;
+      border-top: none;
+      border-bottom: 1px solid $gray;
     }
     ol {
       @extend %site-col;
+      overflow: hidden;
       margin-top: 0;
       margin-bottom: 0;
       list-style: none;
     }
     li {
-      @include float;
-      width: 16.66%;
-      margin: 0;
+      @include inline-block;
+      @include font-size(18);
+      padding-top: 1em;
+      margin: 0 1.5em 0 0;
     }
     a {
       display: block;
-      height: 3em;
-      padding: .825em 0 0;
-      color: $nav-link-color;
+      height: 2.5em;
+      color: $dk-gray;
       font-family: $nav-font;
-      text-align: center;
       &:hover {
-        background-color: $nav-link-hover;
-        color: $nav-link-color;
+        border-bottom: 5px solid $blue;
+        color: $blue;
       }
     }
   }

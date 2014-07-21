@@ -23,6 +23,10 @@
 /* Header Colors */
 /* Nav Colors */
 /* About Colors */
+/* Benefits Colors */
+/* Case Histories Colors */
+/* Bio Colors */
+/* Contact Colors */
 /* Footer Colors */
 /**************************************************
  SITE SPECIFIC VARIABLES
@@ -291,23 +295,22 @@ html {
  CLEAR FIX
 **************************************************/
 /* line 5, ../sass/01helpers/extends.scss */
-header .content {
+header .content, #team .content, #contact article {
   zoom: 1; }
   /* line 7, ../sass/01helpers/extends.scss */
-  header .content:before, header .content:after {
+  header .content:before, #team .content:before, #contact article:before, header .content:after, #team .content:after, #contact article:after {
     display: table;
     visibility: hidden;
     content: ""; }
   /* line 13, ../sass/01helpers/extends.scss */
-  header .content:after {
+  header .content:after, #team .content:after, #contact article:after {
     clear: both; }
 
 /**************************************************
  SITE COLUMN
 **************************************************/
 /* line 22, ../sass/01helpers/extends.scss */
-header .content, header nav ol, #about article, footer .content {
-  min-width: 810px;
+header .content, header nav ol, #about article, #benefits article, #cases .content, #team .content, #pub article, #contact article, footer .content {
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto; }
@@ -322,13 +325,13 @@ header .content, header nav ol, #about article, footer .content {
 ::selection {
   background: rgba(5, 18, 255, 0.5);
   text-shadow: none;
-  color: #1a1a1a; }
+  color: #c2d2f2; }
 
 /* line 6, ../sass/02base/general.scss */
 ::-moz-selection {
   background: rgba(5, 18, 255, 0.5);
   text-shadow: none;
-  color: #1a1a1a; }
+  color: #c2d2f2; }
 
 /* line 7, ../sass/02base/general.scss */
 img::selection {
@@ -363,7 +366,7 @@ html {
 
 /* line 29, ../sass/02base/general.scss */
 body {
-  font-family: "Georgia", serif;
+  font-family: "Lora", "Georgia", serif;
   background-color: white; }
 
 /* line 34, ../sass/02base/general.scss */
@@ -371,54 +374,78 @@ body, select, input, textarea {
   color: #1a1a1a; }
 
 /* line 38, ../sass/02base/general.scss */
+header,
+footer,
 section {
-  padding: 9em 6em; }
+  min-width: 900px;
+  padding-left: 6em;
+  padding-right: 6em; }
+
+/* line 46, ../sass/02base/general.scss */
+section {
+  padding-top: 9em;
+  padding-bottom: 9em; }
 
 /**************************************************
  DEFAULT TYPE STYLES
 **************************************************/
 /* line 5, ../sass/02base/type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: playfair-display, serif; }
+  font-family: "Playfair Display", "Georgia", serif; }
 
 /* line 9, ../sass/02base/type.scss */
 h1 {
-  font-size: 42px;
-  font-size: 4.2rem; }
-
-/* line 13, ../sass/02base/type.scss */
-h2 {
   font-size: 36px;
-  font-size: 3.6rem; }
+  font-size: 3.6rem;
+  margin-bottom: 1em; }
+  /* line 12, ../sass/02base/type.scss */
+  h1:after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 1px;
+    margin-top: 1em;
+    background-color: #1a1a1a; }
 
-/* line 17, ../sass/02base/type.scss */
+/* line 22, ../sass/02base/type.scss */
+h2 {
+  font-size: 30px;
+  font-size: 3rem; }
+
+/* line 26, ../sass/02base/type.scss */
 h3 {
   font-size: 24px;
   font-size: 2.4rem; }
 
-/* line 21, ../sass/02base/type.scss */
+/* line 30, ../sass/02base/type.scss */
+h4 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+/* line 34, ../sass/02base/type.scss */
 p, li, address {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.4; }
 
-/* line 26, ../sass/02base/type.scss */
+/* line 39, ../sass/02base/type.scss */
 p {
+  margin-top: 1em;
   margin-bottom: 1em; }
 
-/* line 31, ../sass/02base/type.scss */
+/* line 45, ../sass/02base/type.scss */
 li {
   margin-bottom: .25em; }
 
-/* line 36, ../sass/02base/type.scss */
+/* line 50, ../sass/02base/type.scss */
 ol {
   list-style: decimal; }
 
-/* line 37, ../sass/02base/type.scss */
+/* line 51, ../sass/02base/type.scss */
 ul {
   list-style: square; }
 
-/* line 39, ../sass/02base/type.scss */
+/* line 53, ../sass/02base/type.scss */
 ol,
 ul {
   margin: 1em 0 1em 2.5em; }
@@ -426,7 +453,7 @@ ul {
 /**************************************************
  DEFAULT LINK STYLES
 **************************************************/
-/* line 52, ../sass/02base/type.scss */
+/* line 66, ../sass/02base/type.scss */
 a {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -434,7 +461,7 @@ a {
   transition: all 0.2s;
   color: #999999;
   text-decoration: none; }
-  /* line 56, ../sass/02base/type.scss */
+  /* line 70, ../sass/02base/type.scss */
   a:hover, a:focus {
     color: #666666; }
 
@@ -466,7 +493,7 @@ a {
   background-color: #0512ff;
   border: 3px solid #000784;
   border-bottom: none;
-  font-family: playfair-display, serif;
+  font-family: "Playfair Display", "Georgia", serif;
   color: white; }
   /* line 24, ../sass/03components/buttons.scss */
   .top-button.hide {
@@ -490,10 +517,8 @@ a {
 header {
   position: relative;
   border-top: 10px solid #e6e6e6;
-  padding: 0 6em 4.8em; }
-  /* line 9, ../sass/04modules/header.scss */
-  header .content {
-    padding: 18em 0; }
+  padding-top: 15em;
+  padding-bottom: 15em; }
   /* line 14, ../sass/04modules/header.scss */
   header h1 {
     float: left;
@@ -502,102 +527,212 @@ header {
     width: 290px;
     padding-top: 70px;
     background: url("../img/logo/carrottllc-logo.png") 0 0 no-repeat; }
-  /* line 22, ../sass/04modules/header.scss */
-  header h2 {
-    font-size: 18px;
-    font-size: 1.8rem;
-    margin: 36px 0 0 320px;
-    color: #999999; }
-  /* line 27, ../sass/04modules/header.scss */
+    /* line 21, ../sass/04modules/header.scss */
+    header h1:after {
+      display: none; }
+  /* line 25, ../sass/04modules/header.scss */
+  header aside {
+    margin-top: 1.9em;
+    margin-left: 324px;
+    padding-left: 3em;
+    border-left: 1px solid #cccccc;
+    font-family: "Playfair Display", "Georgia", serif;
+    text-align: left; }
+    /* line 32, ../sass/04modules/header.scss */
+    header aside p {
+      font-size: 18px;
+      font-size: 1.8rem;
+      margin: 0;
+      color: #999999;
+      line-height: 1.45; }
+  /* line 39, ../sass/04modules/header.scss */
   header nav {
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #333333; }
-    /* line 33, ../sass/04modules/header.scss */
+    padding: 0 6em;
+    background-color: white;
+    border-top: 1px solid #e6e6e6; }
+    /* line 48, ../sass/04modules/header.scss */
     header nav.sticky {
+      -moz-box-shadow: rgba(26, 26, 26, 0.25) 0 0 30px;
+      -webkit-box-shadow: rgba(26, 26, 26, 0.25) 0 0 30px;
+      box-shadow: rgba(26, 26, 26, 0.25) 0 0 30px;
       position: fixed;
+      z-index: 20;
       top: 0;
-      bottom: auto; }
-    /* line 38, ../sass/04modules/header.scss */
+      bottom: auto;
+      border-top: none;
+      border-bottom: 1px solid #999999; }
+    /* line 57, ../sass/04modules/header.scss */
     header nav ol {
+      overflow: hidden;
       margin-top: 0;
       margin-bottom: 0;
       list-style: none; }
-    /* line 44, ../sass/04modules/header.scss */
+    /* line 64, ../sass/04modules/header.scss */
     header nav li {
-      float: left;
-      width: 16.66%;
-      margin: 0; }
-    /* line 49, ../sass/04modules/header.scss */
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      font-size: 18px;
+      font-size: 1.8rem;
+      padding-top: 1em;
+      margin: 0 1.5em 0 0; }
+    /* line 70, ../sass/04modules/header.scss */
     header nav a {
       display: block;
-      height: 3em;
-      padding: .825em 0 0;
-      color: white;
-      font-family: playfair-display, serif;
-      text-align: center; }
-      /* line 56, ../sass/04modules/header.scss */
+      height: 2.5em;
+      color: #666666;
+      font-family: "Playfair Display", "Georgia", serif; }
+      /* line 75, ../sass/04modules/header.scss */
       header nav a:hover {
-        background-color: #0512ff;
-        color: white; }
+        border-bottom: 5px solid #0512ff;
+        color: #0512ff; }
 
 /**************************************************
  ABOUT SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/about.scss */
 #about {
-  background-color: #9ea3ff;
-  color: #00066b; }
+  background-color: #1a3366;
+  color: white; }
+  /* line 8, ../sass/04modules/about.scss */
+  #about article {
+    padding: 0 18em 0 3em; }
+    /* line 11, ../sass/04modules/about.scss */
+    #about article p {
+      font-size: 18px;
+      font-size: 1.8rem; }
+      /* line 13, ../sass/04modules/about.scss */
+      #about article p span {
+        font-size: 30px;
+        font-size: 3rem;
+        margin-left: -.75em; }
 
 /**************************************************
- ABOUT SECTION STYLES
+ CLIENT BENEFITS SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/benefits.scss */
-#about {
-  background-color: #9ea3ff;
-  color: #00066b; }
+#benefits {
+  background-color: #e6e6e6; }
 
 /**************************************************
- ABOUT SECTION STYLES
+ CASE HISTORIES SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/cases.scss */
-#about {
-  background-color: #9ea3ff;
-  color: #00066b; }
+#cases {
+  position: relative; }
+  /* line 10, ../sass/04modules/cases.scss */
+  #cases h1 {
+    color: #0512ff; }
+    /* line 12, ../sass/04modules/cases.scss */
+    #cases h1:after {
+      display: none; }
+
+/* line 18, ../sass/04modules/cases.scss */
+.flex-direction-nav {
+  list-style: none;
+  margin: 0; }
+  /* line 21, ../sass/04modules/cases.scss */
+  .flex-direction-nav li {
+    margin: 0; }
+
+/* line 26, ../sass/04modules/cases.scss */
+.flex-control-paging {
+  list-style: none;
+  margin: 0;
+  text-align: right; }
+  /* line 30, ../sass/04modules/cases.scss */
+  .flex-control-paging li {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline; }
 
 /**************************************************
- ABOUT SECTION STYLES
+ BIOGRAPHIES SECTION STYLES
 **************************************************/
-/* line 5, ../sass/04modules/bios.scss */
-#about {
-  background-color: #9ea3ff;
-  color: #00066b; }
+/* line 5, ../sass/04modules/team.scss */
+#team {
+  background-color: #c2d2f2; }
+  /* line 11, ../sass/04modules/team.scss */
+  #team article {
+    -moz-box-shadow: rgba(26, 26, 26, 0.25) 0 0 10px;
+    -webkit-box-shadow: rgba(26, 26, 26, 0.25) 0 0 10px;
+    box-shadow: rgba(26, 26, 26, 0.25) 0 0 10px;
+    margin-bottom: 1.5em;
+    padding: 1.8em 2.4em .3em;
+    background-color: white;
+    border: 10px solid #e6e6e6; }
 
 /**************************************************
- ABOUT SECTION STYLES
+ PUBLICATIONS SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/publications.scss */
-#about {
-  background-color: #9ea3ff;
-  color: #00066b; }
+#pub {
+  border-top: 1px solid #666666; }
 
 /**************************************************
- ABOUT SECTION STYLES
+ CONTACT SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/contact.scss */
-#about {
-  background-color: #9ea3ff;
-  color: #00066b; }
+#contact {
+  background-color: #1a3366; }
+  /* line 11, ../sass/04modules/contact.scss */
+  #contact h1 {
+    float: left;
+    margin-bottom: 0;
+    color: white; }
+    /* line 15, ../sass/04modules/contact.scss */
+    #contact h1:after {
+      display: none; }
+  /* line 19, ../sass/04modules/contact.scss */
+  #contact .locations {
+    margin-left: 240px; }
+
+/* line 24, ../sass/04modules/contact.scss */
+.location-info {
+  width: 47.5%;
+  padding: .6em; }
+  /* line 27, ../sass/04modules/contact.scss */
+  .location-info h4 {
+    padding: .5em .75em;
+    background-color: #1a1a1a;
+    color: #c2d2f2; }
+  /* line 32, ../sass/04modules/contact.scss */
+  .location-info address, .location-info p {
+    margin: 1px 0 0;
+    padding: .5em .75em;
+    background-color: #c2d2f2; }
+    /* line 36, ../sass/04modules/contact.scss */
+    .location-info address span, .location-info p span {
+      color: #0512ff; }
+  /* line 40, ../sass/04modules/contact.scss */
+  .location-info.princeton {
+    float: left; }
+  /* line 43, ../sass/04modules/contact.scss */
+  .location-info.london {
+    float: right; }
 
 /**************************************************
  FOOTER STYLES
 **************************************************/
 /* line 5, ../sass/04modules/footer.scss */
 footer {
-  padding: 1.5em 6em;
-  background-color: #0512ff; }
-  /* line 11, ../sass/04modules/footer.scss */
+  padding: 2.4em 6em;
+  background-color: #0a1529;
+  color: #c2d2f2; }
+  /* line 12, ../sass/04modules/footer.scss */
   footer p {
+    font-size: 14px;
+    font-size: 1.4rem;
     margin: 0; }

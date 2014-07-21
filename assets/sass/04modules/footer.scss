@@ -3,12 +3,14 @@
 **************************************************/
 
 footer {
-  padding: 1.5em $side-padding;
+  padding: 2.4em $side-padding;
   background-color: $footer-bg;
+  color: $footer-text;
   .content {
     @extend %site-col;
   }
   p {
+    @include font-size(14);
     margin: 0;
   }
 }

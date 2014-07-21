@@ -1,0 +1,18 @@
+/**************************************************
+ BIOGRAPHIES SECTION STYLES
+**************************************************/
+
+#team {
+  background-color: $bios-bg;
+  .content {
+    @extend %clearfix;
+    @extend %site-col;
+  }
+  article {
+    @include box-shadow(transparentize($black, .75) 0 0 10px);
+    margin-bottom: 1.5em;
+    padding: 1.8em 2.4em .3em;
+    background-color: $white;
+    border: 10px solid $x-lt-gray;
+  }
+}

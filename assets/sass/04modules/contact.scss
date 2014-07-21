@@ -1,11 +1,46 @@
 /**************************************************
- ABOUT SECTION STYLES
+ CONTACT SECTION STYLES
 **************************************************/
 
-#about {
-  background-color: $about-bg;
-  color: $about-text;
+#contact {
+  background-color: $contact-bg;
   article {
+    @extend %clearfix;
     @extend %site-col;
+  }
+  h1 {
+    @include float;
+    margin-bottom: 0;
+    color: $white;
+    &:after {
+      display: none;
+    }
+  }
+  .locations {
+    margin-left: 240px;
+  }
+}
+
+.location-info {
+  width: 47.5%;
+  padding: .6em;
+  h4 {
+    padding: .5em .75em;
+    background-color: $black;
+    color: $lt-blue;
+  }
+  address, p {
+    margin: 1px 0 0;
+    padding: .5em .75em;
+    background-color: $lt-blue;
+    span {
+      color: $blue;
+    }
+  }
+  &.princeton {
+    @include float;
+  }
+  &.london {
+    @include float(right);
   }
 }

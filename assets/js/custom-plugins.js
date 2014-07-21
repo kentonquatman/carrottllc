@@ -354,7 +354,7 @@ function escapeSelector (str) {
           }
 
           // CONTROLSCONTAINER:
-          (slider.controlsContainer) ? $(slider.controlsContainer).append(slider.controlNavScaffold) : slider.append(slider.controlNavScaffold);
+          (slider.controlsContainer) ? $(slider.controlsContainer).append(slider.controlNavScaffold) : slider.prepend(slider.controlNavScaffold);
           methods.controlNav.set();
 
           methods.controlNav.active();
@@ -418,7 +418,7 @@ function escapeSelector (str) {
       },
       directionNav: {
         setup: function() {
-          var directionNavScaffold = $('<ul class="' + namespace + 'direction-nav"><li><a class="' + namespace + 'prev" href="#">' + vars.prevText + '</a></li><li><a class="' + namespace + 'next" href="#">' + vars.nextText + '</a></li></ul>');
+          var directionNavScaffold = $('<ul class="' + namespace + 'direction-nav"><li class="' + namespace + 'prev"><a href="#">' + vars.prevText + '</a></li><li class="' + namespace + 'next"><a href="#">' + vars.nextText + '</a></li></ul>');
 
           // CONTROLSCONTAINER:
           if (slider.controlsContainer) {

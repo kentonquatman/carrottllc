@@ -35,6 +35,15 @@ body, select, input, textarea {
   color: $body-text;
 }
 
+header,
+footer, 
 section {
-  padding: 9em $side-padding;
+  min-width: 900px;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+}
+
+section {
+  padding-top: 9em;
+  padding-bottom: 9em;
 }

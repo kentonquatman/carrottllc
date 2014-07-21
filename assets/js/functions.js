@@ -9,7 +9,7 @@ var Site = window.Site || {};
     // STICKY NAV BAR
 		$(function() {
 		  function stickyNav() {
-		    if ($(window).scrollTop() >= 440) {
+		    if ($(window).scrollTop() >= 353) {
 					$('header nav').addClass('sticky');
 					$('.top-button').removeClass('hide');
 		    }
@@ -20,6 +20,11 @@ var Site = window.Site || {};
 		  }
 		  $(window).scroll(stickyNav);
 		});
+		
+		//SLIDES
+    $('#cases .content').flexslider({
+      animation: "slide"
+    });
 
   });
 })(jQuery);

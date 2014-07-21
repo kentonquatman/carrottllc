@@ -1,11 +1,33 @@
 /**************************************************
- ABOUT SECTION STYLES
+ CASE HISTORIES SECTION STYLES
 **************************************************/
 
-#about {
-  background-color: $about-bg;
-  color: $about-text;
-  article {
+#cases {
+  position: relative;
+  .content {
     @extend %site-col;
+  }
+  h1 {
+    color: $cases-headline-color;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.flex-direction-nav, {
+  list-style: none;
+  margin: 0;
+  li {
+    margin: 0;
+  }
+}
+
+.flex-control-paging {
+  list-style: none;
+  margin: 0;
+  text-align: right;
+  li {
+    @include inline-block;
   }
 }

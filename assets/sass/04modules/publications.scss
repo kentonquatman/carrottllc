@@ -1,10 +1,9 @@
 /**************************************************
- ABOUT SECTION STYLES
+ PUBLICATIONS SECTION STYLES
 **************************************************/
 
-#about {
-  background-color: $about-bg;
-  color: $about-text;
+#pub {
+  border-top: 1px solid $border-color;
   article {
     @extend %site-col;
   }

@@ -1,10 +1,9 @@
 /**************************************************
- ABOUT SECTION STYLES
+ CLIENT BENEFITS SECTION STYLES
 **************************************************/
 
-#about {
-  background-color: $about-bg;
-  color: $about-text;
+#benefits {
+  background-color: $benefits-bg;
   article {
     @extend %site-col;
   }
