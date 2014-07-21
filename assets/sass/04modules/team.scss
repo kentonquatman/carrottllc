@@ -3,16 +3,59 @@
 **************************************************/
 
 #team {
-  background-color: $bios-bg;
+  background-color: $lt-blue;
+  border-top: 20px solid $dk-blue;
   .content {
     @extend %clearfix;
     @extend %site-col;
   }
+  h1 {
+    color: $white;
+  }
+  .left-col, 
+  .right-col {
+    width: 49%;
+  }
+  .left-col {
+    float: left;
+  }
+  .right-col {
+    float: right;
+  }
   article {
-    @include box-shadow(transparentize($black, .75) 0 0 10px);
-    margin-bottom: 1.5em;
-    padding: 1.8em 2.4em .3em;
+    margin-bottom: 4%;
     background-color: $white;
-    border: 10px solid $x-lt-gray;
+    border-top: 5px solid $dk-blue;
+    .staff-header {
+      display: block;
+      padding: 2.4em 2.4em 1.8em;
+      background: $white url("../img/graphics/down-arrow.png") 95% 50% no-repeat;
+      &.open {
+        background-image: url("../img/graphics/up-arrow.png");
+      }
+      h3 {
+        color: $dk-blue;
+        margin-bottom: .375em;
+      }
+      h4 {
+        @include font-size(16);
+        color: $gray;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background-color: lighten($lt-blue, 10%);
+        h3 {
+          color: lighten($dk-blue, 10%);
+        }
+        h4 {
+          color: darken($lt-blue, 20%);
+        }
+      }
+    }
+    .bio {
+      display: none;
+      padding: 0 5.4em 1.8em 2.4em;
+      border-top: 1px solid $x-lt-gray;
+    }
   }
 }

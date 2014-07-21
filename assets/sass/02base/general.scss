@@ -38,12 +38,12 @@ body, select, input, textarea {
 header,
 footer, 
 section {
-  min-width: 900px;
+  min-width: 960px;
   padding-left: $side-padding;
   padding-right: $side-padding;
 }
 
 section {
   padding-top: 9em;
-  padding-bottom: 9em;
+  padding-bottom: 12em;
 }

@@ -3,8 +3,22 @@
 **************************************************/
 
 #pub {
-  border-top: 1px solid $border-color;
+  border-top: 20px solid $x-dk-gray;
+  h1 {
+    color: $dk-blue;
+  }
   article {
     @extend %site-col;
+    ol {
+      width: 70em;
+      list-style: none;
+      margin: 0;
+    }
+    li {
+      @include font-size(17);
+      margin: 1em 0 0;
+      padding-top: 1em;
+      border-top: 1px solid $lt-blue;
+    }
   }
 }

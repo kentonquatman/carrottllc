@@ -3,7 +3,7 @@ var Site = window.Site || {};
   $(function() {
   
     // SMOOTH SCROLL
-    $('header nav a').smoothScroll({offset: -40});
+    $('header nav a').smoothScroll({offset: -60});
     $('.top-button').smoothScroll();
     
     // STICKY NAV BAR
@@ -21,9 +21,17 @@ var Site = window.Site || {};
 		  $(window).scroll(stickyNav);
 		});
 		
-		//SLIDES
+		// SLIDES
     $('#cases .content').flexslider({
-      animation: "slide"
+      animation: "slide",
+      slideshow: false,
+      smoothHeight: "1"
+    });
+    
+    // TEAM SLIDE TOGGLE
+    $('#team .staff-header').click(function(){
+      $(this).toggleClass('open');
+      $(this).siblings('.bio').slideToggle();
     });
 
   });

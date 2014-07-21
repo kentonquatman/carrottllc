@@ -3,7 +3,8 @@
 **************************************************/
 
 footer {
-  padding: 2.4em $side-padding;
+  padding-top: 2.4em;
+  padding-bottom: 2.4em;
   background-color: $footer-bg;
   color: $footer-text;
   .content {

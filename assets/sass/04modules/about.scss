@@ -3,16 +3,18 @@
 **************************************************/
 
 #about {
-  background-color: $about-bg;
-  color: $about-text;
+  background-color: $dk-blue;
+  color: $white;
   article {
     @extend %site-col;
-    padding: 0 18em 0 3em;
+    padding: 0 6em;
     p {
-      @include font-size(18);
+      @include font-size(19);
+      text-align: justify;
       span {
         @include font-size(30);
         margin-left: -.75em;
+        color: $lt-blue;
       }
     }
   }

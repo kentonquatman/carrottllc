@@ -2,12 +2,8 @@
  BUTTON STYLES
 **************************************************/
 
-%button {
-  display: block;
-}
-
 .top-button {
-  @include border-top-radius(.5em);
+  @include border-top-radius(6px);
   @include box-shadow(transparentize($black, .25) 0 0 5px);
   @include font-size(18);
   position: fixed;
@@ -15,18 +11,18 @@
   bottom: 0;
   right: 3em;
   height: 3em;
-  padding: 1em 1.5em;
-  background-color: $top-button-bg;
-  border: 3px solid $top-button-border;
+  padding: 1em 1.25em;
+  background-color: $white;
+  border: 4px solid $x-lt-gray;
   border-bottom: none;
   font-family: $button-font;
-  color: $top-button-color;
+  color: $black;
   &.hide {
     bottom: -4em;
   }
   &:hover {
-    background-color: $top-button-hover-bg;
-    border-color: $top-button-border-hover;
-    color: $top-button-hover-color;
+    background-color: lighten($lt-blue, 10%);
+    border-color: $lt-blue;
+    color: $blue;
   }
 }

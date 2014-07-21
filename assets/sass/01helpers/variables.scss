@@ -45,8 +45,8 @@ $body-bg: $white;
 $selection-text: $lt-blue;
 $selection-bg: transparentize($blue, 0.5);
 
-$link-color: $gray;
-$link-hover: $dk-gray;
+$link-color: darken($lt-blue, 35%);
+$link-hover: darken($lt-blue, 25%);
 
 $border-color: $dk-gray;
 
@@ -70,22 +70,6 @@ $nav-link-bg: $x-dk-gray;
 $nav-link-hover-color: $white;
 $nav-link-hover-bg: $blue;
 
-/* About Colors */
-$about-bg: $dk-blue;
-$about-text: $white;
-
-/* Benefits Colors */
-$benefits-bg: $x-lt-gray;
-
-/* Case Histories Colors */
-$cases-headline-color: $blue;
-
-/* Bio Colors */
-$bios-bg: $lt-blue;
-
-/* Contact Colors */
-$contact-bg: $dk-blue;
-
 /* Footer Colors */
 $footer-bg: darken($dk-blue, 15%);
 $footer-text: $lt-blue;
@@ -95,4 +79,4 @@ $footer-text: $lt-blue;
 **************************************************/
 
 $base-size: 10;
-$side-padding: 6em;
+$side-padding: 9em;

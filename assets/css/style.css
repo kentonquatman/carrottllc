@@ -22,11 +22,6 @@
 /* Button Colors */
 /* Header Colors */
 /* Nav Colors */
-/* About Colors */
-/* Benefits Colors */
-/* Case Histories Colors */
-/* Bio Colors */
-/* Contact Colors */
 /* Footer Colors */
 /**************************************************
  SITE SPECIFIC VARIABLES
@@ -295,15 +290,15 @@ html {
  CLEAR FIX
 **************************************************/
 /* line 5, ../sass/01helpers/extends.scss */
-header .content, #team .content, #contact article {
+header .content, #benefits article, #team .content, #contact article {
   zoom: 1; }
   /* line 7, ../sass/01helpers/extends.scss */
-  header .content:before, #team .content:before, #contact article:before, header .content:after, #team .content:after, #contact article:after {
+  header .content:before, #benefits article:before, #team .content:before, #contact article:before, header .content:after, #benefits article:after, #team .content:after, #contact article:after {
     display: table;
     visibility: hidden;
     content: ""; }
   /* line 13, ../sass/01helpers/extends.scss */
-  header .content:after, #team .content:after, #contact article:after {
+  header .content:after, #benefits article:after, #team .content:after, #contact article:after {
     clear: both; }
 
 /**************************************************
@@ -377,14 +372,14 @@ body, select, input, textarea {
 header,
 footer,
 section {
-  min-width: 900px;
-  padding-left: 6em;
-  padding-right: 6em; }
+  min-width: 960px;
+  padding-left: 9em;
+  padding-right: 9em; }
 
 /* line 46, ../sass/02base/general.scss */
 section {
   padding-top: 9em;
-  padding-bottom: 9em; }
+  padding-bottom: 12em; }
 
 /**************************************************
  DEFAULT TYPE STYLES
@@ -398,54 +393,46 @@ h1 {
   font-size: 36px;
   font-size: 3.6rem;
   margin-bottom: 1em; }
-  /* line 12, ../sass/02base/type.scss */
-  h1:after {
-    content: "";
-    display: block;
-    width: 45px;
-    height: 1px;
-    margin-top: 1em;
-    background-color: #1a1a1a; }
 
-/* line 22, ../sass/02base/type.scss */
+/* line 14, ../sass/02base/type.scss */
 h2 {
   font-size: 30px;
   font-size: 3rem; }
 
-/* line 26, ../sass/02base/type.scss */
+/* line 18, ../sass/02base/type.scss */
 h3 {
   font-size: 24px;
   font-size: 2.4rem; }
 
-/* line 30, ../sass/02base/type.scss */
+/* line 22, ../sass/02base/type.scss */
 h4 {
   font-size: 18px;
   font-size: 1.8rem; }
 
-/* line 34, ../sass/02base/type.scss */
+/* line 26, ../sass/02base/type.scss */
 p, li, address {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.4; }
 
-/* line 39, ../sass/02base/type.scss */
+/* line 31, ../sass/02base/type.scss */
 p {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-/* line 45, ../sass/02base/type.scss */
+/* line 37, ../sass/02base/type.scss */
 li {
   margin-bottom: .25em; }
 
-/* line 50, ../sass/02base/type.scss */
+/* line 42, ../sass/02base/type.scss */
 ol {
   list-style: decimal; }
 
-/* line 51, ../sass/02base/type.scss */
+/* line 43, ../sass/02base/type.scss */
 ul {
   list-style: square; }
 
-/* line 53, ../sass/02base/type.scss */
+/* line 45, ../sass/02base/type.scss */
 ol,
 ul {
   margin: 1em 0 1em 2.5em; }
@@ -453,17 +440,17 @@ ul {
 /**************************************************
  DEFAULT LINK STYLES
 **************************************************/
-/* line 66, ../sass/02base/type.scss */
+/* line 58, ../sass/02base/type.scss */
 a {
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  color: #999999;
+  color: #2f65d3;
   text-decoration: none; }
-  /* line 70, ../sass/02base/type.scss */
+  /* line 62, ../sass/02base/type.scss */
   a:hover, a:focus {
-    color: #666666; }
+    color: #5984dc; }
 
 /**************************************************
  COMPONENTS
@@ -471,14 +458,14 @@ a {
 /**************************************************
  BUTTON STYLES
 **************************************************/
-/* line 9, ../sass/03components/buttons.scss */
+/* line 5, ../sass/03components/buttons.scss */
 .top-button {
-  -moz-border-radius-topleft: 0.5em;
-  -webkit-border-top-left-radius: 0.5em;
-  border-top-left-radius: 0.5em;
-  -moz-border-radius-topright: 0.5em;
-  -webkit-border-top-right-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
   -moz-box-shadow: rgba(26, 26, 26, 0.75) 0 0 5px;
   -webkit-box-shadow: rgba(26, 26, 26, 0.75) 0 0 5px;
   box-shadow: rgba(26, 26, 26, 0.75) 0 0 5px;
@@ -489,24 +476,21 @@ a {
   bottom: 0;
   right: 3em;
   height: 3em;
-  padding: 1em 1.5em;
-  background-color: #0512ff;
-  border: 3px solid #000784;
+  padding: 1em 1.25em;
+  background-color: white;
+  border: 4px solid #e6e6e6;
   border-bottom: none;
   font-family: "Playfair Display", "Georgia", serif;
-  color: white; }
-  /* line 24, ../sass/03components/buttons.scss */
+  color: #1a1a1a; }
+  /* line 20, ../sass/03components/buttons.scss */
   .top-button.hide {
     bottom: -4em; }
-  /* line 27, ../sass/03components/buttons.scss */
+  /* line 23, ../sass/03components/buttons.scss */
   .top-button:hover {
-    background-color: #333333;
-    border-color: #1a1a1a;
-    color: white; }
+    background-color: #ecf1fb;
+    border-color: #c2d2f2;
+    color: #0512ff; }
 
-/**************************************************
- FORM STYLES
-**************************************************/
 /**************************************************
  MODULES
 **************************************************/
@@ -555,7 +539,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0 6em;
+    padding: 0 9em;
     background-color: white;
     border-top: 1px solid #e6e6e6; }
     /* line 48, ../sass/04modules/header.scss */
@@ -606,120 +590,320 @@ header {
   color: white; }
   /* line 8, ../sass/04modules/about.scss */
   #about article {
-    padding: 0 18em 0 3em; }
+    padding: 0 6em; }
     /* line 11, ../sass/04modules/about.scss */
     #about article p {
-      font-size: 18px;
-      font-size: 1.8rem; }
-      /* line 13, ../sass/04modules/about.scss */
+      font-size: 19px;
+      font-size: 1.9rem;
+      text-align: justify; }
+      /* line 14, ../sass/04modules/about.scss */
       #about article p span {
         font-size: 30px;
         font-size: 3rem;
-        margin-left: -.75em; }
+        margin-left: -.75em;
+        color: #c2d2f2; }
 
 /**************************************************
  CLIENT BENEFITS SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/benefits.scss */
 #benefits {
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+  border-top: 20px solid white; }
+  /* line 8, ../sass/04modules/benefits.scss */
+  #benefits article {
+    padding-right: 9em; }
+    /* line 12, ../sass/04modules/benefits.scss */
+    #benefits article .first-col,
+    #benefits article .last-col {
+      width: 48%; }
+    /* line 16, ../sass/04modules/benefits.scss */
+    #benefits article .first-col {
+      float: left; }
+    /* line 19, ../sass/04modules/benefits.scss */
+    #benefits article .last-col {
+      float: right; }
+    /* line 22, ../sass/04modules/benefits.scss */
+    #benefits article h1 {
+      margin-top: .125em;
+      margin-bottom: 1.125em;
+      color: #1a3366; }
+    /* line 27, ../sass/04modules/benefits.scss */
+    #benefits article p {
+      font-size: 17px;
+      font-size: 1.7rem;
+      margin: 0;
+      line-height: 1.6;
+      text-align: justify; }
 
 /**************************************************
  CASE HISTORIES SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/cases.scss */
 #cases {
-  position: relative; }
-  /* line 10, ../sass/04modules/cases.scss */
+  position: relative;
+  min-height: 42em;
+  border-top: 20px solid #999999; }
+  /* line 12, ../sass/04modules/cases.scss */
   #cases h1 {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #e6e6e6;
     color: #0512ff; }
-    /* line 12, ../sass/04modules/cases.scss */
-    #cases h1:after {
-      display: none; }
 
-/* line 18, ../sass/04modules/cases.scss */
+/* line 19, ../sass/04modules/cases.scss */
+.slides {
+  margin: 0; }
+  /* line 21, ../sass/04modules/cases.scss */
+  .slides li {
+    margin: 0; }
+  /* line 24, ../sass/04modules/cases.scss */
+  .slides h2 {
+    margin-bottom: .8em; }
+    /* line 26, ../sass/04modules/cases.scss */
+    .slides h2:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 24px;
+      margin-top: .75em;
+      background-color: #c2d2f2; }
+  /* line 35, ../sass/04modules/cases.scss */
+  .slides .description {
+    float: left;
+    width: 60%; }
+    /* line 38, ../sass/04modules/cases.scss */
+    .slides .description p {
+      margin: 0 0 1em; }
+  /* line 42, ../sass/04modules/cases.scss */
+  .slides .testimonials {
+    float: right;
+    width: 35%; }
+    /* line 45, ../sass/04modules/cases.scss */
+    .slides .testimonials blockquote {
+      position: relative;
+      margin-top: -1.2em;
+      margin-bottom: 1.8em;
+      padding-right: 3em;
+      padding-top: 1em; }
+      /* line 51, ../sass/04modules/cases.scss */
+      .slides .testimonials blockquote:before {
+        font-size: 120px;
+        font-size: 12rem;
+        content: "\201C";
+        position: absolute;
+        z-index: 1;
+        top: -.25em;
+        left: -.25em;
+        color: #e6e6e6; }
+      /* line 60, ../sass/04modules/cases.scss */
+      .slides .testimonials blockquote p {
+        font-size: 18px;
+        font-size: 1.8rem;
+        position: relative;
+        z-index: 2;
+        font-style: italic;
+        margin: 0 0 .5em; }
+    /* line 68, ../sass/04modules/cases.scss */
+    .slides .testimonials h4 {
+      margin-bottom: 0.25em;
+      font-style: italic; }
+    /* line 72, ../sass/04modules/cases.scss */
+    .slides .testimonials p {
+      margin: 0; }
+
+/* line 78, ../sass/04modules/cases.scss */
 .flex-direction-nav {
   list-style: none;
   margin: 0; }
-  /* line 21, ../sass/04modules/cases.scss */
+  /* line 81, ../sass/04modules/cases.scss */
   .flex-direction-nav li {
+    font-size: 10px;
+    font-size: 1rem;
     margin: 0; }
+  /* line 85, ../sass/04modules/cases.scss */
+  .flex-direction-nav .flex-prev,
+  .flex-direction-nav .flex-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -75px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    opacity: 0.25;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    width: 60px;
+    padding-top: 150px;
+    background: url("../img/graphics/arrow-sprite.png") 0 0 no-repeat; }
+    /* line 97, ../sass/04modules/cases.scss */
+    .flex-direction-nav .flex-prev:hover,
+    .flex-direction-nav .flex-next:hover {
+      filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+      opacity: 1; }
+  /* line 101, ../sass/04modules/cases.scss */
+  .flex-direction-nav .flex-prev {
+    left: 0;
+    background-position: 0 0; }
+  /* line 105, ../sass/04modules/cases.scss */
+  .flex-direction-nav .flex-next {
+    right: 0;
+    background-position: -60px 0; }
 
-/* line 26, ../sass/04modules/cases.scss */
+/* line 111, ../sass/04modules/cases.scss */
 .flex-control-paging {
+  float: right;
   list-style: none;
-  margin: 0;
+  margin: 1.2em 0 0;
   text-align: right; }
-  /* line 30, ../sass/04modules/cases.scss */
+  /* line 116, ../sass/04modules/cases.scss */
   .flex-control-paging li {
     display: inline-block;
     vertical-align: middle;
     *vertical-align: auto;
     *zoom: 1;
-    *display: inline; }
+    *display: inline;
+    margin-left: .75em; }
+  /* line 120, ../sass/04modules/cases.scss */
+  .flex-control-paging a {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: inset rgba(26, 26, 26, 0.25) 0 0 5px;
+    -webkit-box-shadow: inset rgba(26, 26, 26, 0.25) 0 0 5px;
+    box-shadow: inset rgba(26, 26, 26, 0.25) 0 0 5px;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    width: 1em;
+    padding-top: 1em;
+    background-color: #cccccc; }
+    /* line 129, ../sass/04modules/cases.scss */
+    .flex-control-paging a:hover {
+      background-color: #c2d2f2; }
+    /* line 132, ../sass/04modules/cases.scss */
+    .flex-control-paging a.flex-active {
+      background-color: #1a3366; }
 
 /**************************************************
  BIOGRAPHIES SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/team.scss */
 #team {
-  background-color: #c2d2f2; }
-  /* line 11, ../sass/04modules/team.scss */
+  background-color: #c2d2f2;
+  border-top: 20px solid #1a3366; }
+  /* line 12, ../sass/04modules/team.scss */
+  #team h1 {
+    color: white; }
+  /* line 15, ../sass/04modules/team.scss */
+  #team .left-col,
+  #team .right-col {
+    width: 49%; }
+  /* line 19, ../sass/04modules/team.scss */
+  #team .left-col {
+    float: left; }
+  /* line 22, ../sass/04modules/team.scss */
+  #team .right-col {
+    float: right; }
+  /* line 25, ../sass/04modules/team.scss */
   #team article {
-    -moz-box-shadow: rgba(26, 26, 26, 0.25) 0 0 10px;
-    -webkit-box-shadow: rgba(26, 26, 26, 0.25) 0 0 10px;
-    box-shadow: rgba(26, 26, 26, 0.25) 0 0 10px;
-    margin-bottom: 1.5em;
-    padding: 1.8em 2.4em .3em;
+    margin-bottom: 4%;
     background-color: white;
-    border: 10px solid #e6e6e6; }
+    border-top: 5px solid #1a3366; }
+    /* line 29, ../sass/04modules/team.scss */
+    #team article .staff-header {
+      display: block;
+      padding: 2.4em 2.4em 1.8em;
+      background: white url("../img/graphics/down-arrow.png") 95% 50% no-repeat; }
+      /* line 33, ../sass/04modules/team.scss */
+      #team article .staff-header.open {
+        background-image: url("../img/graphics/up-arrow.png"); }
+      /* line 36, ../sass/04modules/team.scss */
+      #team article .staff-header h3 {
+        color: #1a3366;
+        margin-bottom: .375em; }
+      /* line 40, ../sass/04modules/team.scss */
+      #team article .staff-header h4 {
+        font-size: 16px;
+        font-size: 1.6rem;
+        color: #999999;
+        text-transform: uppercase; }
+      /* line 45, ../sass/04modules/team.scss */
+      #team article .staff-header:hover {
+        background-color: #ecf1fb; }
+        /* line 47, ../sass/04modules/team.scss */
+        #team article .staff-header:hover h3 {
+          color: #24478f; }
+        /* line 50, ../sass/04modules/team.scss */
+        #team article .staff-header:hover h4 {
+          color: #6e94e0; }
+    /* line 55, ../sass/04modules/team.scss */
+    #team article .bio {
+      display: none;
+      padding: 0 5.4em 1.8em 2.4em;
+      border-top: 1px solid #e6e6e6; }
 
 /**************************************************
  PUBLICATIONS SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/publications.scss */
 #pub {
-  border-top: 1px solid #666666; }
+  border-top: 20px solid #333333; }
+  /* line 7, ../sass/04modules/publications.scss */
+  #pub h1 {
+    color: #1a3366; }
+  /* line 12, ../sass/04modules/publications.scss */
+  #pub article ol {
+    width: 70em;
+    list-style: none;
+    margin: 0; }
+  /* line 17, ../sass/04modules/publications.scss */
+  #pub article li {
+    font-size: 17px;
+    font-size: 1.7rem;
+    margin: 1em 0 0;
+    padding-top: 1em;
+    border-top: 1px solid #c2d2f2; }
 
 /**************************************************
  CONTACT SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/contact.scss */
 #contact {
-  background-color: #1a3366; }
-  /* line 11, ../sass/04modules/contact.scss */
+  padding-bottom: 9em;
+  background-color: #1a3366;
+  border-top: 20px solid #c2d2f2; }
+  /* line 13, ../sass/04modules/contact.scss */
   #contact h1 {
     float: left;
     margin-bottom: 0;
     color: white; }
-    /* line 15, ../sass/04modules/contact.scss */
+    /* line 17, ../sass/04modules/contact.scss */
     #contact h1:after {
       display: none; }
-  /* line 19, ../sass/04modules/contact.scss */
+  /* line 21, ../sass/04modules/contact.scss */
   #contact .locations {
-    margin-left: 240px; }
+    margin-left: 24em; }
 
-/* line 24, ../sass/04modules/contact.scss */
+/* line 26, ../sass/04modules/contact.scss */
 .location-info {
-  width: 47.5%;
-  padding: .6em; }
-  /* line 27, ../sass/04modules/contact.scss */
+  width: 48%;
+  padding: .6em;
+  background-color: white; }
+  /* line 30, ../sass/04modules/contact.scss */
   .location-info h4 {
-    padding: .5em .75em;
-    background-color: #1a1a1a;
-    color: #c2d2f2; }
-  /* line 32, ../sass/04modules/contact.scss */
+    padding: .5em .375em .625em;
+    color: #1a3366; }
+  /* line 34, ../sass/04modules/contact.scss */
   .location-info address, .location-info p {
-    margin: 1px 0 0;
+    margin: 3px 0 0;
     padding: .5em .75em;
-    background-color: #c2d2f2; }
-    /* line 36, ../sass/04modules/contact.scss */
+    background-color: #e6e6e6; }
+    /* line 38, ../sass/04modules/contact.scss */
     .location-info address span, .location-info p span {
-      color: #0512ff; }
-  /* line 40, ../sass/04modules/contact.scss */
+      color: #666666; }
+  /* line 42, ../sass/04modules/contact.scss */
   .location-info.princeton {
     float: left; }
-  /* line 43, ../sass/04modules/contact.scss */
+  /* line 45, ../sass/04modules/contact.scss */
   .location-info.london {
     float: right; }
 
@@ -728,10 +912,11 @@ header {
 **************************************************/
 /* line 5, ../sass/04modules/footer.scss */
 footer {
-  padding: 2.4em 6em;
+  padding-top: 2.4em;
+  padding-bottom: 2.4em;
   background-color: #0a1529;
   color: #c2d2f2; }
-  /* line 12, ../sass/04modules/footer.scss */
+  /* line 13, ../sass/04modules/footer.scss */
   footer p {
     font-size: 14px;
     font-size: 1.4rem;

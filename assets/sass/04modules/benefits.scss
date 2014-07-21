@@ -3,8 +3,32 @@
 **************************************************/
 
 #benefits {
-  background-color: $benefits-bg;
+  background-color: $x-lt-gray;
+  border-top: 20px solid $white;
   article {
+    @extend %clearfix;
     @extend %site-col;
+    padding-right: 9em;
+    .first-col,
+    .last-col {
+      width: 48%;
+    }
+    .first-col {
+      @include float;
+    }
+    .last-col {
+      @include float(right);
+    }
+    h1 {
+      margin-top: .125em;
+      margin-bottom: 1.125em;
+      color: $dk-blue;
+    }
+    p {
+      @include font-size(17);
+      margin: 0;
+      line-height: 1.6;
+      text-align: justify;
+    }
   }
 }

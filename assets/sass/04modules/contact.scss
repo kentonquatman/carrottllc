@@ -3,7 +3,9 @@
 **************************************************/
 
 #contact {
-  background-color: $contact-bg;
+  padding-bottom: 9em;
+  background-color: $dk-blue;
+  border-top: 20px solid $lt-blue;
   article {
     @extend %clearfix;
     @extend %site-col;
@@ -17,24 +19,24 @@
     }
   }
   .locations {
-    margin-left: 240px;
+    margin-left: 24em;
   }
 }
 
 .location-info {
-  width: 47.5%;
+  width: 48%;
   padding: .6em;
+  background-color: $white;
   h4 {
-    padding: .5em .75em;
-    background-color: $black;
-    color: $lt-blue;
+    padding: .5em .375em .625em;
+    color: $dk-blue;
   }
   address, p {
-    margin: 1px 0 0;
+    margin: 3px 0 0;
     padding: .5em .75em;
-    background-color: $lt-blue;
+    background-color: $x-lt-gray;
     span {
-      color: $blue;
+      color: $dk-gray;
     }
   }
   &.princeton {
