@@ -19,7 +19,6 @@
 /**************************************************
  COLORS IN USE
 **************************************************/
-/* Button Colors */
 /* Header Colors */
 /* Nav Colors */
 /* Footer Colors */
@@ -502,8 +501,21 @@ header {
   position: relative;
   border-top: 10px solid #e6e6e6;
   padding-top: 15em;
-  padding-bottom: 15em; }
-  /* line 14, ../sass/04modules/header.scss */
+  padding-bottom: 15em;
+  background: white url("../img/illustrations/help-building-01.png") 110% 80px no-repeat; }
+  @media screen and (min-width: 62.5em) {
+    /* line 5, ../sass/04modules/header.scss */
+    header {
+      background-position: 100% 80px; } }
+  @media screen and (min-width: 68.75em) {
+    /* line 5, ../sass/04modules/header.scss */
+    header {
+      background-position: 95% 80px; } }
+  @media screen and (min-width: 75em) {
+    /* line 5, ../sass/04modules/header.scss */
+    header {
+      background-position: 90% 80px; } }
+  /* line 18, ../sass/04modules/header.scss */
   header h1 {
     float: left;
     overflow: hidden;
@@ -511,10 +523,10 @@ header {
     width: 290px;
     padding-top: 70px;
     background: url("../img/logo/carrottllc-logo.png") 0 0 no-repeat; }
-    /* line 21, ../sass/04modules/header.scss */
+    /* line 25, ../sass/04modules/header.scss */
     header h1:after {
       display: none; }
-  /* line 25, ../sass/04modules/header.scss */
+  /* line 29, ../sass/04modules/header.scss */
   header aside {
     margin-top: 1.9em;
     margin-left: 324px;
@@ -522,14 +534,14 @@ header {
     border-left: 1px solid #cccccc;
     font-family: "Playfair Display", "Georgia", serif;
     text-align: left; }
-    /* line 32, ../sass/04modules/header.scss */
+    /* line 36, ../sass/04modules/header.scss */
     header aside p {
       font-size: 18px;
       font-size: 1.8rem;
       margin: 0;
       color: #999999;
       line-height: 1.45; }
-  /* line 39, ../sass/04modules/header.scss */
+  /* line 43, ../sass/04modules/header.scss */
   header nav {
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -542,7 +554,7 @@ header {
     padding: 0 9em;
     background-color: white;
     border-top: 1px solid #e6e6e6; }
-    /* line 48, ../sass/04modules/header.scss */
+    /* line 52, ../sass/04modules/header.scss */
     header nav.sticky {
       -moz-box-shadow: rgba(26, 26, 26, 0.25) 0 0 30px;
       -webkit-box-shadow: rgba(26, 26, 26, 0.25) 0 0 30px;
@@ -553,13 +565,13 @@ header {
       bottom: auto;
       border-top: none;
       border-bottom: 1px solid #999999; }
-    /* line 57, ../sass/04modules/header.scss */
+    /* line 61, ../sass/04modules/header.scss */
     header nav ol {
       overflow: hidden;
       margin-top: 0;
       margin-bottom: 0;
       list-style: none; }
-    /* line 64, ../sass/04modules/header.scss */
+    /* line 68, ../sass/04modules/header.scss */
     header nav li {
       display: inline-block;
       vertical-align: middle;
@@ -570,13 +582,13 @@ header {
       font-size: 1.8rem;
       padding-top: 1em;
       margin: 0 1.5em 0 0; }
-    /* line 70, ../sass/04modules/header.scss */
+    /* line 74, ../sass/04modules/header.scss */
     header nav a {
       display: block;
       height: 2.5em;
       color: #666666;
       font-family: "Playfair Display", "Georgia", serif; }
-      /* line 75, ../sass/04modules/header.scss */
+      /* line 79, ../sass/04modules/header.scss */
       header nav a:hover {
         border-bottom: 5px solid #0512ff;
         color: #0512ff; }
@@ -608,27 +620,35 @@ header {
 **************************************************/
 /* line 5, ../sass/04modules/benefits.scss */
 #benefits {
-  background-color: #e6e6e6;
-  border-top: 20px solid white; }
-  /* line 8, ../sass/04modules/benefits.scss */
+  border-top: 20px solid white;
+  background: #e6e6e6 url("../img/illustrations/exclamation-01.png") 99% 50% no-repeat; }
+  @media screen and (min-width: 68.75em) {
+    /* line 5, ../sass/04modules/benefits.scss */
+    #benefits {
+      background-position: 98% 50%; } }
+  @media screen and (min-width: 87.5em) {
+    /* line 5, ../sass/04modules/benefits.scss */
+    #benefits {
+      background-position: 95% 50%; } }
+  /* line 10, ../sass/04modules/benefits.scss */
   #benefits article {
     padding-right: 9em; }
-    /* line 12, ../sass/04modules/benefits.scss */
+    /* line 14, ../sass/04modules/benefits.scss */
     #benefits article .first-col,
     #benefits article .last-col {
       width: 48%; }
-    /* line 16, ../sass/04modules/benefits.scss */
+    /* line 18, ../sass/04modules/benefits.scss */
     #benefits article .first-col {
       float: left; }
-    /* line 19, ../sass/04modules/benefits.scss */
+    /* line 21, ../sass/04modules/benefits.scss */
     #benefits article .last-col {
       float: right; }
-    /* line 22, ../sass/04modules/benefits.scss */
+    /* line 24, ../sass/04modules/benefits.scss */
     #benefits article h1 {
       margin-top: .125em;
       margin-bottom: 1.125em;
       color: #1a3366; }
-    /* line 27, ../sass/04modules/benefits.scss */
+    /* line 29, ../sass/04modules/benefits.scss */
     #benefits article p {
       font-size: 17px;
       font-size: 1.7rem;
@@ -846,16 +866,37 @@ header {
 **************************************************/
 /* line 5, ../sass/04modules/publications.scss */
 #pub {
-  border-top: 20px solid #333333; }
-  /* line 7, ../sass/04modules/publications.scss */
+  border-top: 20px solid #333333;
+  background: white url("../img/illustrations/publications-01.png") 120% 50% no-repeat; }
+  @media screen and (min-width: 62.5em) {
+    /* line 5, ../sass/04modules/publications.scss */
+    #pub {
+      background-position: 110% 50%; } }
+  @media screen and (min-width: 68.75em) {
+    /* line 5, ../sass/04modules/publications.scss */
+    #pub {
+      background-position: 100% 50%; } }
+  @media screen and (min-width: 75em) {
+    /* line 5, ../sass/04modules/publications.scss */
+    #pub {
+      background-position: 95% 50%; } }
+  @media screen and (min-width: 81.25em) {
+    /* line 5, ../sass/04modules/publications.scss */
+    #pub {
+      background-position: 90% 50%; } }
+  @media screen and (min-width: 87.5em) {
+    /* line 5, ../sass/04modules/publications.scss */
+    #pub {
+      background-position: 85% 50%; } }
+  /* line 13, ../sass/04modules/publications.scss */
   #pub h1 {
     color: #1a3366; }
-  /* line 12, ../sass/04modules/publications.scss */
+  /* line 18, ../sass/04modules/publications.scss */
   #pub article ol {
     width: 70em;
     list-style: none;
     margin: 0; }
-  /* line 17, ../sass/04modules/publications.scss */
+  /* line 23, ../sass/04modules/publications.scss */
   #pub article li {
     font-size: 17px;
     font-size: 1.7rem;

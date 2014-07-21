@@ -77,6 +77,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/illustrations\/exclamation-01-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36142,
+		"inputAbbreviatedPath": "\/assets\/img\/illustrations\/exclamation-01-2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/illustrations\/exclamation-01-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/illustrations\/exclamation-01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29990,
+		"inputAbbreviatedPath": "\/assets\/img\/illustrations\/exclamation-01.png",
+		"outputAbbreviatedPath": "\/assets\/img\/illustrations\/exclamation-01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/illustrations\/help-building-01-2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28169,
+		"inputAbbreviatedPath": "\/assets\/img\/illustrations\/help-building-01-2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/illustrations\/help-building-01-2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/illustrations\/help-building-01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9400,
+		"inputAbbreviatedPath": "\/assets\/img\/illustrations\/help-building-01.png",
+		"outputAbbreviatedPath": "\/assets\/img\/illustrations\/help-building-01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/illustrations\/publications-01-2x.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18513,
+		"inputAbbreviatedPath": "\/assets\/img\/illustrations\/publications-01-2x.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/illustrations\/publications-01-2x.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/illustrations\/publications-01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18513,
+		"inputAbbreviatedPath": "\/assets\/img\/illustrations\/publications-01.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/illustrations\/publications-01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/logo\/carrottllc-logo-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,

@@ -4,6 +4,12 @@
 
 #pub {
   border-top: 20px solid $x-dk-gray;
+  background: $white url("../img/illustrations/publications-01.png") 120% 50% no-repeat;
+  @include break-up(1000){ background-position: 110% 50%; }
+  @include break-up(1100){ background-position: 100% 50%; }
+  @include break-up(1200){ background-position: 95% 50%; }
+  @include break-up(1300){ background-position: 90% 50%; }
+  @include break-up(1400){ background-position: 85% 50%; }
   h1 {
     color: $dk-blue;
   }

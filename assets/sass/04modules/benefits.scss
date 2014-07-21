@@ -3,8 +3,10 @@
 **************************************************/
 
 #benefits {
-  background-color: $x-lt-gray;
   border-top: 20px solid $white;
+  background: $x-lt-gray url("../img/illustrations/exclamation-01.png") 99% 50% no-repeat;
+  @include break-up(1100){ background-position: 98% 50%; }
+  @include break-up(1400){ background-position: 95% 50%; }
   article {
     @extend %clearfix;
     @extend %site-col;

@@ -7,6 +7,10 @@ header {
   border-top: 10px solid $x-lt-gray;
   padding-top: 15em;
   padding-bottom: 15em;
+  background: $white url("../img/illustrations/help-building-01.png") 110% 80px no-repeat;
+  @include break-up(1000){ background-position: 100% 80px; }
+  @include break-up(1100){ background-position: 95% 80px; }
+  @include break-up(1200){ background-position: 90% 80px; }
   .content {
     @extend %clearfix;
     @extend %site-col;
