@@ -23,14 +23,6 @@
   }
   h2 {
     margin-bottom: .8em;
-    &:after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 24px;
-      margin-top: .75em;
-      background-color: $lt-blue;
-    }
   }
   .description {
     @include float;
@@ -71,6 +63,23 @@
     }
     p {
       margin: 0;
+    }
+  }
+  .deere-and-company {
+    .description {
+      width: 35%;
+    }
+    .testimonials {
+      width: 60%;
+      margin-top: 1.2em;
+    }
+  }
+  .snap-on-inc {
+    .description {
+      @include column-count(2);
+      @include column-gap(2.4em);
+      @include reset-float;
+      width: auto;
     }
   }
 }

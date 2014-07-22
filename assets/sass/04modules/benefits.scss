@@ -4,31 +4,25 @@
 
 #benefits {
   border-top: 20px solid $white;
-  background: $x-lt-gray url("../img/illustrations/exclamation-01.png") 99% 50% no-repeat;
-  @include break-up(1100){ background-position: 98% 50%; }
-  @include break-up(1400){ background-position: 95% 50%; }
+  background: $x-lt-gray url("../img/illustrations/exclamation-01.png") 96% 50% no-repeat;
+  @include break-up(1300){ background-position: 94% 50%; }
+  @include break-up(1400){ background-position: 90% 50%; }
   article {
     @extend %clearfix;
     @extend %site-col;
-    padding-right: 9em;
-    .first-col,
-    .last-col {
-      width: 48%;
-    }
-    .first-col {
-      @include float;
-    }
-    .last-col {
-      @include float(right);
-    }
-    h1 {
-      margin-top: .125em;
-      margin-bottom: 1.125em;
-      color: $dk-blue;
-    }
+    padding-right: 15em;
+  }
+  h1 {
+    margin-top: .125em;
+    margin-bottom: 1.125em;
+    color: $dk-blue;
+  }
+  .content {
+    @include column-count(2);
+    @include column-gap(3em);
     p {
       @include font-size(17);
-      margin: 0;
+      margin: 0 0 .5em;
       line-height: 1.6;
       text-align: justify;
     }

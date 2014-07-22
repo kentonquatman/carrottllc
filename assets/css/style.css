@@ -621,38 +621,36 @@ header {
 /* line 5, ../sass/04modules/benefits.scss */
 #benefits {
   border-top: 20px solid white;
-  background: #e6e6e6 url("../img/illustrations/exclamation-01.png") 99% 50% no-repeat; }
-  @media screen and (min-width: 68.75em) {
+  background: #e6e6e6 url("../img/illustrations/exclamation-01.png") 96% 50% no-repeat; }
+  @media screen and (min-width: 81.25em) {
     /* line 5, ../sass/04modules/benefits.scss */
     #benefits {
-      background-position: 98% 50%; } }
+      background-position: 94% 50%; } }
   @media screen and (min-width: 87.5em) {
     /* line 5, ../sass/04modules/benefits.scss */
     #benefits {
-      background-position: 95% 50%; } }
+      background-position: 90% 50%; } }
   /* line 10, ../sass/04modules/benefits.scss */
   #benefits article {
-    padding-right: 9em; }
-    /* line 14, ../sass/04modules/benefits.scss */
-    #benefits article .first-col,
-    #benefits article .last-col {
-      width: 48%; }
-    /* line 18, ../sass/04modules/benefits.scss */
-    #benefits article .first-col {
-      float: left; }
-    /* line 21, ../sass/04modules/benefits.scss */
-    #benefits article .last-col {
-      float: right; }
-    /* line 24, ../sass/04modules/benefits.scss */
-    #benefits article h1 {
-      margin-top: .125em;
-      margin-bottom: 1.125em;
-      color: #1a3366; }
-    /* line 29, ../sass/04modules/benefits.scss */
-    #benefits article p {
+    padding-right: 15em; }
+  /* line 15, ../sass/04modules/benefits.scss */
+  #benefits h1 {
+    margin-top: .125em;
+    margin-bottom: 1.125em;
+    color: #1a3366; }
+  /* line 20, ../sass/04modules/benefits.scss */
+  #benefits .content {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em; }
+    /* line 23, ../sass/04modules/benefits.scss */
+    #benefits .content p {
       font-size: 17px;
       font-size: 1.7rem;
-      margin: 0;
+      margin: 0 0 .5em;
       line-height: 1.6;
       text-align: justify; }
 
@@ -679,33 +677,25 @@ header {
   /* line 24, ../sass/04modules/cases.scss */
   .slides h2 {
     margin-bottom: .8em; }
-    /* line 26, ../sass/04modules/cases.scss */
-    .slides h2:after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 24px;
-      margin-top: .75em;
-      background-color: #c2d2f2; }
-  /* line 35, ../sass/04modules/cases.scss */
+  /* line 27, ../sass/04modules/cases.scss */
   .slides .description {
     float: left;
     width: 60%; }
-    /* line 38, ../sass/04modules/cases.scss */
+    /* line 30, ../sass/04modules/cases.scss */
     .slides .description p {
       margin: 0 0 1em; }
-  /* line 42, ../sass/04modules/cases.scss */
+  /* line 34, ../sass/04modules/cases.scss */
   .slides .testimonials {
     float: right;
     width: 35%; }
-    /* line 45, ../sass/04modules/cases.scss */
+    /* line 37, ../sass/04modules/cases.scss */
     .slides .testimonials blockquote {
       position: relative;
       margin-top: -1.2em;
       margin-bottom: 1.8em;
       padding-right: 3em;
       padding-top: 1em; }
-      /* line 51, ../sass/04modules/cases.scss */
+      /* line 43, ../sass/04modules/cases.scss */
       .slides .testimonials blockquote:before {
         font-size: 120px;
         font-size: 12rem;
@@ -715,7 +705,7 @@ header {
         top: -.25em;
         left: -.25em;
         color: #e6e6e6; }
-      /* line 60, ../sass/04modules/cases.scss */
+      /* line 52, ../sass/04modules/cases.scss */
       .slides .testimonials blockquote p {
         font-size: 18px;
         font-size: 1.8rem;
@@ -723,24 +713,41 @@ header {
         z-index: 2;
         font-style: italic;
         margin: 0 0 .5em; }
-    /* line 68, ../sass/04modules/cases.scss */
+    /* line 60, ../sass/04modules/cases.scss */
     .slides .testimonials h4 {
       margin-bottom: 0.25em;
       font-style: italic; }
-    /* line 72, ../sass/04modules/cases.scss */
+    /* line 64, ../sass/04modules/cases.scss */
     .slides .testimonials p {
       margin: 0; }
+  /* line 69, ../sass/04modules/cases.scss */
+  .slides .deere-and-company .description {
+    width: 35%; }
+  /* line 72, ../sass/04modules/cases.scss */
+  .slides .deere-and-company .testimonials {
+    width: 60%;
+    margin-top: 1.2em; }
+  /* line 78, ../sass/04modules/cases.scss */
+  .slides .snap-on-inc .description {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 2.4em;
+    -webkit-column-gap: 2.4em;
+    column-gap: 2.4em;
+    float: none;
+    width: auto; }
 
-/* line 78, ../sass/04modules/cases.scss */
+/* line 87, ../sass/04modules/cases.scss */
 .flex-direction-nav {
   list-style: none;
   margin: 0; }
-  /* line 81, ../sass/04modules/cases.scss */
+  /* line 90, ../sass/04modules/cases.scss */
   .flex-direction-nav li {
     font-size: 10px;
     font-size: 1rem;
     margin: 0; }
-  /* line 85, ../sass/04modules/cases.scss */
+  /* line 94, ../sass/04modules/cases.scss */
   .flex-direction-nav .flex-prev,
   .flex-direction-nav .flex-next {
     position: absolute;
@@ -754,27 +761,27 @@ header {
     width: 60px;
     padding-top: 150px;
     background: url("../img/graphics/arrow-sprite.png") 0 0 no-repeat; }
-    /* line 97, ../sass/04modules/cases.scss */
+    /* line 106, ../sass/04modules/cases.scss */
     .flex-direction-nav .flex-prev:hover,
     .flex-direction-nav .flex-next:hover {
       filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
       opacity: 1; }
-  /* line 101, ../sass/04modules/cases.scss */
+  /* line 110, ../sass/04modules/cases.scss */
   .flex-direction-nav .flex-prev {
     left: 0;
     background-position: 0 0; }
-  /* line 105, ../sass/04modules/cases.scss */
+  /* line 114, ../sass/04modules/cases.scss */
   .flex-direction-nav .flex-next {
     right: 0;
     background-position: -60px 0; }
 
-/* line 111, ../sass/04modules/cases.scss */
+/* line 120, ../sass/04modules/cases.scss */
 .flex-control-paging {
   float: right;
   list-style: none;
   margin: 1.2em 0 0;
   text-align: right; }
-  /* line 116, ../sass/04modules/cases.scss */
+  /* line 125, ../sass/04modules/cases.scss */
   .flex-control-paging li {
     display: inline-block;
     vertical-align: middle;
@@ -782,7 +789,7 @@ header {
     *zoom: 1;
     *display: inline;
     margin-left: .75em; }
-  /* line 120, ../sass/04modules/cases.scss */
+  /* line 129, ../sass/04modules/cases.scss */
   .flex-control-paging a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -796,10 +803,10 @@ header {
     width: 1em;
     padding-top: 1em;
     background-color: #cccccc; }
-    /* line 129, ../sass/04modules/cases.scss */
+    /* line 138, ../sass/04modules/cases.scss */
     .flex-control-paging a:hover {
       background-color: #c2d2f2; }
-    /* line 132, ../sass/04modules/cases.scss */
+    /* line 141, ../sass/04modules/cases.scss */
     .flex-control-paging a.flex-active {
       background-color: #1a3366; }
 
