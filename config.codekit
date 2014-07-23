@@ -11,6 +11,138 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/fav\/apple-touch-icon-114x114-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9319,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-114x114-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-114x114-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon-120x120-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19333,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-120x120-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-120x120-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon-144x144-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12186,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-144x144-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-144x144-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon-152x152-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24807,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-152x152-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-152x152-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon-57x57-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3789,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-57x57-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-57x57-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon-60x60-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6779,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-60x60-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-60x60-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon-72x72-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5175,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-72x72-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-72x72-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon-76x76-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9302,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-76x76-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-76x76-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3789,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-precomposed.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/apple-touch-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3789,
+		"inputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/apple-touch-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/facebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19995,
+		"inputAbbreviatedPath": "\/assets\/fav\/facebook.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/facebook.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1203,
+		"inputAbbreviatedPath": "\/assets\/fav\/favicon.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/graphics\/arrow-sprite-2x.png": {
 		"fileType": 32768,
 		"ignore": 0,

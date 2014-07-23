@@ -45,8 +45,8 @@ $body-bg: $white;
 $selection-text: $lt-blue;
 $selection-bg: transparentize($blue, 0.5);
 
-$link-color: darken($lt-blue, 35%);
-$link-hover: darken($lt-blue, 25%);
+$link-color: lighten($dk-blue, 20%);
+$link-hover: lighten($dk-blue, 45%);
 
 $border-color: $dk-gray;
 
@@ -64,7 +64,7 @@ $nav-link-hover-bg: $blue;
 
 /* Footer Colors */
 $footer-bg: darken($dk-blue, 15%);
-$footer-text: $lt-blue;
+$footer-text: $gray;
 
 /**************************************************
  SITE SPECIFIC VARIABLES

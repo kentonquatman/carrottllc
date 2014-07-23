@@ -3,13 +3,13 @@ var Site = window.Site || {};
   $(function() {
   
     // SMOOTH SCROLL
-    $('header nav a').smoothScroll({offset: -60});
+    $('header nav a').smoothScroll({offset: -62});
     $('.top-button').smoothScroll();
     
     // STICKY NAV BAR
 		$(function() {
 		  function stickyNav() {
-		    if ($(window).scrollTop() >= 353) {
+		    if ($(window).scrollTop() >= 313) {
 					$('header nav').addClass('sticky');
 					$('.top-button').removeClass('hide');
 		    }
