@@ -1,0 +1,68 @@
+/**************************************************
+ BIOGRAPHIES SECTION STYLES
+**************************************************/
+
+#team {
+  background-color: $lt-purple;
+  border-top: 20px solid $dk-purple;
+  .content {
+    @extend %clearfix;
+    @extend %site-col;
+  }
+  h1 {
+    color: $white;
+  }
+  .left-col, 
+  .right-col {
+    width: 49%;
+  }
+  .left-col {
+    float: left;
+  }
+  .right-col {
+    float: right;
+  }
+  article {
+    margin-bottom: 4%;
+    background-color: $white;
+    border-top: 5px solid $dk-purple;
+    .staff-header {
+      display: block;
+      padding: 2.4em 2.4em 1.8em;
+      background: $white url("../img/graphics/down-arrow.png") 95% 50% no-repeat;
+      &.open {
+        background-image: url("../img/graphics/up-arrow.png");
+      }
+      @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi) {
+        background-image: url("../img/graphics/down-arrow-2x.png");
+        background-size: 30px 30px;
+        &.open {
+          background-image: url("../img/graphics/up-arrow-2x.png");
+        }
+      }
+      h3 {
+        color: $dk-purple;
+        margin-bottom: .375em;
+      }
+      h4 {
+        @include font-size(16);
+        color: $gray;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background-color: lighten($lt-purple, 10%);
+        h3 {
+          color: lighten($dk-purple, 10%);
+        }
+        h4 {
+          color: darken($lt-purple, 20%);
+        }
+      }
+    }
+    .bio {
+      display: none;
+      padding: 0 5.4em 1.8em 2.4em;
+      border-top: 1px solid $x-lt-gray;
+    }
+  }
+}

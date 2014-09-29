@@ -1,0 +1,48 @@
+/**************************************************
+ CONTACT SECTION STYLES
+**************************************************/
+
+#contact {
+  padding-bottom: 9em;
+  background-color: $dk-purple;
+  border-top: 20px solid $lt-purple;
+  article {
+    @extend %clearfix;
+    @extend %site-col;
+  }
+  h1 {
+    @include float;
+    margin-bottom: 0;
+    color: $white;
+    &:after {
+      display: none;
+    }
+  }
+  .locations {
+    margin-left: 24em;
+  }
+}
+
+.location-info {
+  width: 48%;
+  padding: .6em;
+  background-color: $white;
+  h4 {
+    padding: .5em .375em .625em;
+    color: $dk-purple;
+  }
+  address, p {
+    margin: 3px 0 0;
+    padding: .5em .75em;
+    background-color: $x-lt-gray;
+    span {
+      color: $dk-gray;
+    }
+  }
+  &.princeton {
+    @include float;
+  }
+  &.london {
+    @include float(right);
+  }
+}

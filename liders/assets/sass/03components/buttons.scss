@@ -1,0 +1,28 @@
+/**************************************************
+ BUTTON STYLES
+**************************************************/
+
+.top-button {
+  @include border-top-radius(6px);
+  @include box-shadow(transparentize($black, .25) 0 0 5px);
+  @include font-size(18);
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 3em;
+  height: 3em;
+  padding: 1em 1.25em;
+  background-color: $white;
+  border: 4px solid $x-lt-gray;
+  border-bottom: none;
+  font-family: $button-font;
+  color: $black;
+  &.hide {
+    bottom: -4em;
+  }
+  &:hover {
+    background-color: lighten($lt-purple, 10%);
+    border-color: $lt-purple;
+    color: $purple;
+  }
+}

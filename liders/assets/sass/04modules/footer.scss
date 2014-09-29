@@ -1,0 +1,17 @@
+/**************************************************
+ FOOTER STYLES
+**************************************************/
+
+footer {
+  padding-top: 2.4em;
+  padding-bottom: 2.4em;
+  background-color: $footer-bg;
+  color: $footer-text;
+  .content {
+    @extend %site-col;
+  }
+  p {
+    @include font-size(14);
+    margin: 0;
+  }
+}
