@@ -15,7 +15,7 @@
     background-size: 400px 400px;
   }
   h1 {
-    color: $dk-purple;
+    color: $purple;
   }
   article {
     @extend %site-col;
@@ -28,7 +28,7 @@
       @include font-size(17);
       margin: 1em 0 0;
       padding-top: 1em;
-      border-top: 1px solid $lt-purple;
+      border-top: 1px solid $x-lt-purple;
     }
   }
 }

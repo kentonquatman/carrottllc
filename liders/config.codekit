@@ -330,6 +330,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/logo\/liders-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3051,
+		"inputAbbreviatedPath": "\/assets\/img\/logo\/liders-logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo\/liders-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/custom-plugins.js": {
 		"fileType": 64,
 		"ignore": 1,

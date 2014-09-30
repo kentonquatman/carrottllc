@@ -6,17 +6,18 @@ $serif: 'Georgia', serif;
 $sans-serif: 'Helvetica Neue', Helmet, Freesans, sans-serif;
 $monospace: 'courier new', monospace, serif;
 
-$playfair: 'Playfair Display', $serif;
-$lora: 'Lora', $serif;
+$merriweather: 'Merriweather', $serif;
+$montserrat: 'Montserrat', $sans-serif;
+$cinzel: 'Montserrat', $sans-serif;
 
 /**************************************************
  FONTS IN USE
 **************************************************/
 
-$body-font: $lora;
-$headline-font: $playfair;
-$nav-font: $playfair;
-$button-font: $playfair;
+$body-font: $merriweather;
+$headline-font: $cinzel;
+$nav-font: $cinzel;
+$button-font: $cinzel;
 $code-font: $monospace;
 
 /**************************************************
@@ -28,12 +29,13 @@ $x-dk-gray: #333;
 $dk-gray: #666;
 $gray: #999;
 $lt-gray: #ccc;
-$x-lt-gray: #e6e6e6;
+$x-lt-gray: #f2f2f2;
 $white: #fff;
 
-$purple: #632E99;
-$dk-purple: #39264D;
-$lt-purple: #E4DAF2;
+$purple: #602699;
+$dk-purple: #312340;
+$lt-purple: #d4b6f2;
+$x-lt-purple: #dfd3eb;
 
 /**************************************************
  COLORS IN USE
@@ -63,8 +65,8 @@ $nav-link-hover-color: $white;
 $nav-link-hover-bg: $purple;
 
 /* Footer Colors */
-$footer-bg: darken($dk-purple, 15%);
-$footer-text: $gray;
+$footer-bg: darken($dk-purple, 10%);
+$footer-text: $white;
 
 /**************************************************
  SITE SPECIFIC VARIABLES

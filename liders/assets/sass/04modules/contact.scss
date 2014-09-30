@@ -10,7 +10,7 @@
     @extend %clearfix;
     @extend %site-col;
   }
-  h1 {
+  h2 {
     @include float;
     margin-bottom: 0;
     color: $white;

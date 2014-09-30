@@ -5,14 +5,14 @@
 #cases {
   position: relative;
   min-height: 42em;
-  border-top: 20px solid $gray;
+  border-top: 20px solid $lt-gray;
   .content {
     @extend %site-col;
   }
   h1 {
     padding-bottom: 1em;
     border-bottom: 1px solid $x-lt-gray;
-    color: $purple;
+    color: $dk-gray;
   }
 }
 
@@ -58,8 +58,7 @@
       }
     }
     h4 {
-      margin-bottom: 0.25em;
-      font-style: italic;
+      margin-bottom: 0.125em;
     }
     p {
       margin: 0;
@@ -143,7 +142,7 @@
       background-color: $lt-purple;
     }
     &.flex-active {
-      background-color: $dk-purple;
+      background-color: $purple;
     }
   }
 }

@@ -3,8 +3,8 @@
 **************************************************/
 
 #team {
-  background-color: $lt-purple;
-  border-top: 20px solid $dk-purple;
+  background-color: $x-lt-purple;
+  border-top: 20px solid $purple;
   .content {
     @extend %clearfix;
     @extend %site-col;
@@ -25,7 +25,7 @@
   article {
     margin-bottom: 4%;
     background-color: $white;
-    border-top: 5px solid $dk-purple;
+    border-top: 5px solid $purple;
     .staff-header {
       display: block;
       padding: 2.4em 2.4em 1.8em;
@@ -50,12 +50,12 @@
         text-transform: uppercase;
       }
       &:hover {
-        background-color: lighten($lt-purple, 10%);
+        background-color: $lt-purple;
         h3 {
-          color: lighten($dk-purple, 10%);
+          color: $purple;
         }
         h4 {
-          color: darken($lt-purple, 20%);
+          color: $purple;
         }
       }
     }

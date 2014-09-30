@@ -311,15 +311,15 @@ header .content, header nav ol, #about article, #benefits article, #cases .conte
 **************************************************/
 /* line 5, ../sass/02base/general.scss */
 ::selection {
-  background: rgba(99, 46, 153, 0.5);
+  background: rgba(96, 38, 153, 0.5);
   text-shadow: none;
-  color: #E4DAF2; }
+  color: #d4b6f2; }
 
 /* line 6, ../sass/02base/general.scss */
 ::-moz-selection {
-  background: rgba(99, 46, 153, 0.5);
+  background: rgba(96, 38, 153, 0.5);
   text-shadow: none;
-  color: #E4DAF2; }
+  color: #d4b6f2; }
 
 /* line 7, ../sass/02base/general.scss */
 img::selection {
@@ -336,7 +336,7 @@ img::-moz-selection {
 
   /* line 12, ../sass/02base/general.scss */
   a:link {
-    -webkit-tap-highlight-color: rgba(99, 46, 153, 0.5); } }
+    -webkit-tap-highlight-color: rgba(96, 38, 153, 0.5); } }
 /**************************************************
  BASE STYLES
 **************************************************/
@@ -354,7 +354,7 @@ html {
 
 /* line 29, ../sass/02base/general.scss */
 body {
-  font-family: "Lora", "Georgia", serif;
+  font-family: "Merriweather", "Georgia", serif;
   background-color: #fff; }
 
 /* line 34, ../sass/02base/general.scss */
@@ -380,7 +380,7 @@ section {
 **************************************************/
 /* line 5, ../sass/02base/type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", "Georgia", serif; }
+  font-family: "Montserrat", "Helvetica Neue", Helmet, Freesans, sans-serif; }
 
 /* line 9, ../sass/02base/type.scss */
 h1 {
@@ -407,7 +407,7 @@ h4 {
 p, li, address {
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.4; }
+  line-height: 1.5; }
 
 /* line 31, ../sass/02base/type.scss */
 p {
@@ -440,11 +440,11 @@ a {
   -o-transition: all 0.2s;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  color: #6c4891;
+  color: #634782;
   text-decoration: none; }
   /* line 62, ../sass/02base/type.scss */
   a:hover, a:focus {
-    color: #ac90c8; }
+    color: #a38abf; }
 
 /**************************************************
  COMPONENTS
@@ -472,18 +472,18 @@ a {
   height: 3em;
   padding: 1em 1.25em;
   background-color: #fff;
-  border: 4px solid #e6e6e6;
+  border: 4px solid #f2f2f2;
   border-bottom: none;
-  font-family: "Playfair Display", "Georgia", serif;
+  font-family: "Montserrat", "Helvetica Neue", Helmet, Freesans, sans-serif;
   color: #1a1a1a; }
   /* line 20, ../sass/03components/buttons.scss */
   .top-button.hide {
     bottom: -4em; }
   /* line 23, ../sass/03components/buttons.scss */
   .top-button:hover {
-    background-color: white;
-    border-color: #E4DAF2;
-    color: #632E99; }
+    background-color: #ede1fa;
+    border-color: #d4b6f2;
+    color: #602699; }
 
 /**************************************************
  MODULES
@@ -496,15 +496,15 @@ header {
   position: relative;
   padding-top: 12em;
   padding-bottom: 15em;
-  background: #fff url("../img/illustrations/help-building-01.png") 100% 60px no-repeat; }
+  background: #fff url("../img/illustrations/help-building-01.png") 100% 40px no-repeat; }
   @media screen and (min-width: 67.5em) {
     /* line 5, ../sass/04modules/header.scss */
     header {
-      background-position: 96% 60px; } }
+      background-position: 96% 40px; } }
   @media screen and (min-width: 78.75em) {
     /* line 5, ../sass/04modules/header.scss */
     header {
-      background-position: 90% 60px; } }
+      background-position: 90% 40px; } }
   @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi) {
     /* line 5, ../sass/04modules/header.scss */
     header {
@@ -528,19 +528,19 @@ header {
       display: none; }
   /* line 35, ../sass/04modules/header.scss */
   header aside {
-    margin-top: 1.9em;
+    margin-top: -1em;
     margin-left: 324px;
-    padding-left: 3em;
-    border-left: 1px solid #ccc;
-    font-family: "Playfair Display", "Georgia", serif;
+    padding: 1.75em 0 1.5em 3em;
+    border-left: 1px solid #f2f2f2;
     text-align: left; }
-    /* line 42, ../sass/04modules/header.scss */
+    /* line 41, ../sass/04modules/header.scss */
     header aside p {
-      font-size: 18px;
-      font-size: 1.8rem;
+      font-size: 16px;
+      font-size: 1.6rem;
       margin: 0;
       color: #999;
-      line-height: 1.45; }
+      font-weight: 300;
+      line-height: 1.8; }
   /* line 49, ../sass/04modules/header.scss */
   header nav {
     -moz-transition: all 0.2s;
@@ -553,7 +553,7 @@ header {
     bottom: 0;
     padding: 0 9em;
     background-color: #fff;
-    border-top: 1px solid #e6e6e6; }
+    border-top: 1px solid #f2f2f2; }
     /* line 58, ../sass/04modules/header.scss */
     header nav.sticky {
       -moz-box-shadow: rgba(26, 26, 26, 0.5) 0 0 30px;
@@ -573,52 +573,67 @@ header {
       margin-top: 0;
       margin-bottom: 0;
       list-style: none; }
-    /* line 76, ../sass/04modules/header.scss */
+      /* line 75, ../sass/04modules/header.scss */
+      .flexbox header nav ol {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between; }
+    /* line 80, ../sass/04modules/header.scss */
     header nav li {
       display: inline-block;
       vertical-align: middle;
       *vertical-align: auto;
       *zoom: 1;
       *display: inline;
-      font-size: 18px;
-      font-size: 1.8rem;
-      padding-top: 1em;
-      margin: 0 0 0 2em; }
-      /* line 81, ../sass/04modules/header.scss */
+      font-size: 16px;
+      font-size: 1.6rem;
+      padding-top: 1.25em;
+      margin: 0 0 0 2em;
+      -webkit-font-smoothing: antialiased; }
+      /* line 86, ../sass/04modules/header.scss */
       header nav li.about {
         margin-left: 0; }
-    /* line 85, ../sass/04modules/header.scss */
+      /* line 89, ../sass/04modules/header.scss */
+      .flexbox header nav li {
+        margin: 0; }
+    /* line 93, ../sass/04modules/header.scss */
     header nav a {
       display: block;
       height: 2.5em;
-      color: #39264D;
-      font-family: "Playfair Display", "Georgia", serif; }
-      /* line 90, ../sass/04modules/header.scss */
+      color: #999;
+      font-family: "Montserrat", "Helvetica Neue", Helmet, Freesans, sans-serif; }
+      /* line 98, ../sass/04modules/header.scss */
       header nav a:hover {
-        border-bottom: 5px solid #632E99;
-        color: #632E99; }
+        border-bottom: 5px solid #602699;
+        color: #602699; }
 
 /**************************************************
  ABOUT SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/about.scss */
 #about {
-  background-color: #39264D;
+  background-color: #312340;
   color: #fff; }
   /* line 8, ../sass/04modules/about.scss */
   #about article {
     padding: 0 6em; }
     /* line 11, ../sass/04modules/about.scss */
     #about article p {
-      font-size: 19px;
-      font-size: 1.9rem;
-      text-align: justify; }
-      /* line 14, ../sass/04modules/about.scss */
+      font-size: 18px;
+      font-size: 1.8rem;
+      font-weight: 300;
+      text-align: justify;
+      line-height: 1.8; }
+      /* line 16, ../sass/04modules/about.scss */
       #about article p span {
         font-size: 30px;
         font-size: 3rem;
-        margin-left: -.75em;
-        color: #E4DAF2; }
+        margin-left: -.875em;
+        margin-right: .125em;
+        color: #d4b6f2;
+        font-family: "Montserrat", "Helvetica Neue", Helmet, Freesans, sans-serif;
+        line-height: normal; }
 
 /**************************************************
  CLIENT BENEFITS SECTION STYLES
@@ -626,7 +641,7 @@ header {
 /* line 5, ../sass/04modules/benefits.scss */
 #benefits {
   border-top: 20px solid #fff;
-  background: #e6e6e6 url("../img/illustrations/exclamation-01.png") 96% 50% no-repeat; }
+  background: #f2f2f2 url("../img/illustrations/exclamation-01.png") 96% 50% no-repeat; }
   @media screen and (min-width: 81.25em) {
     /* line 5, ../sass/04modules/benefits.scss */
     #benefits {
@@ -647,7 +662,7 @@ header {
   #benefits h1 {
     margin-top: .125em;
     margin-bottom: 1.125em;
-    color: #39264D; }
+    color: #602699; }
   /* line 24, ../sass/04modules/benefits.scss */
   #benefits .content {
     -moz-column-count: 2;
@@ -661,7 +676,7 @@ header {
       font-size: 17px;
       font-size: 1.7rem;
       margin: 0 0 .5em;
-      line-height: 1.6;
+      line-height: 1.8;
       text-align: justify; }
 
 /**************************************************
@@ -671,12 +686,12 @@ header {
 #cases {
   position: relative;
   min-height: 42em;
-  border-top: 20px solid #999; }
+  border-top: 20px solid #ccc; }
   /* line 12, ../sass/04modules/cases.scss */
   #cases h1 {
     padding-bottom: 1em;
-    border-bottom: 1px solid #e6e6e6;
-    color: #632E99; }
+    border-bottom: 1px solid #f2f2f2;
+    color: #666; }
 
 /* line 19, ../sass/04modules/cases.scss */
 .slides {
@@ -714,7 +729,7 @@ header {
         z-index: 1;
         top: -.25em;
         left: -.25em;
-        color: #e6e6e6; }
+        color: #f2f2f2; }
       /* line 52, ../sass/04modules/cases.scss */
       .slides .testimonials blockquote p {
         font-size: 18px;
@@ -725,19 +740,18 @@ header {
         margin: 0 0 .5em; }
     /* line 60, ../sass/04modules/cases.scss */
     .slides .testimonials h4 {
-      margin-bottom: 0.25em;
-      font-style: italic; }
-    /* line 64, ../sass/04modules/cases.scss */
+      margin-bottom: 0.125em; }
+    /* line 63, ../sass/04modules/cases.scss */
     .slides .testimonials p {
       margin: 0; }
-  /* line 69, ../sass/04modules/cases.scss */
+  /* line 68, ../sass/04modules/cases.scss */
   .slides .deere-and-company .description {
     width: 35%; }
-  /* line 72, ../sass/04modules/cases.scss */
+  /* line 71, ../sass/04modules/cases.scss */
   .slides .deere-and-company .testimonials {
     width: 60%;
     margin-top: 1.2em; }
-  /* line 78, ../sass/04modules/cases.scss */
+  /* line 77, ../sass/04modules/cases.scss */
   .slides .snap-on-inc .description {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -748,16 +762,16 @@ header {
     float: none;
     width: auto; }
 
-/* line 87, ../sass/04modules/cases.scss */
+/* line 86, ../sass/04modules/cases.scss */
 .flex-direction-nav {
   list-style: none;
   margin: 0; }
-  /* line 90, ../sass/04modules/cases.scss */
+  /* line 89, ../sass/04modules/cases.scss */
   .flex-direction-nav li {
     font-size: 10px;
     font-size: 1rem;
     margin: 0; }
-  /* line 94, ../sass/04modules/cases.scss */
+  /* line 93, ../sass/04modules/cases.scss */
   .flex-direction-nav .flex-prev,
   .flex-direction-nav .flex-next {
     position: absolute;
@@ -772,32 +786,32 @@ header {
     padding-top: 150px;
     background: url("../img/graphics/arrow-sprite.png") 0 0 no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi) {
-      /* line 94, ../sass/04modules/cases.scss */
+      /* line 93, ../sass/04modules/cases.scss */
       .flex-direction-nav .flex-prev,
       .flex-direction-nav .flex-next {
         background-image: url("../img/graphics/arrow-sprite-2x.png");
         background-size: 120px 150px; } }
-    /* line 110, ../sass/04modules/cases.scss */
+    /* line 109, ../sass/04modules/cases.scss */
     .flex-direction-nav .flex-prev:hover,
     .flex-direction-nav .flex-next:hover {
       filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
       opacity: 1; }
-  /* line 114, ../sass/04modules/cases.scss */
+  /* line 113, ../sass/04modules/cases.scss */
   .flex-direction-nav .flex-prev {
     left: 0;
     background-position: 0 0; }
-  /* line 118, ../sass/04modules/cases.scss */
+  /* line 117, ../sass/04modules/cases.scss */
   .flex-direction-nav .flex-next {
     right: 0;
     background-position: -60px 0; }
 
-/* line 124, ../sass/04modules/cases.scss */
+/* line 123, ../sass/04modules/cases.scss */
 .flex-control-paging {
   float: right;
   list-style: none;
   margin: 1.2em 0 0;
   text-align: right; }
-  /* line 129, ../sass/04modules/cases.scss */
+  /* line 128, ../sass/04modules/cases.scss */
   .flex-control-paging li {
     display: inline-block;
     vertical-align: middle;
@@ -805,7 +819,7 @@ header {
     *zoom: 1;
     *display: inline;
     margin-left: .75em; }
-  /* line 133, ../sass/04modules/cases.scss */
+  /* line 132, ../sass/04modules/cases.scss */
   .flex-control-paging a {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -819,20 +833,20 @@ header {
     width: 1em;
     padding-top: 1em;
     background-color: #ccc; }
-    /* line 142, ../sass/04modules/cases.scss */
+    /* line 141, ../sass/04modules/cases.scss */
     .flex-control-paging a:hover {
-      background-color: #E4DAF2; }
-    /* line 145, ../sass/04modules/cases.scss */
+      background-color: #d4b6f2; }
+    /* line 144, ../sass/04modules/cases.scss */
     .flex-control-paging a.flex-active {
-      background-color: #39264D; }
+      background-color: #602699; }
 
 /**************************************************
  BIOGRAPHIES SECTION STYLES
 **************************************************/
 /* line 5, ../sass/04modules/team.scss */
 #team {
-  background-color: #E4DAF2;
-  border-top: 20px solid #39264D; }
+  background-color: #dfd3eb;
+  border-top: 20px solid #602699; }
   /* line 12, ../sass/04modules/team.scss */
   #team h1 {
     color: #fff; }
@@ -850,7 +864,7 @@ header {
   #team article {
     margin-bottom: 4%;
     background-color: #fff;
-    border-top: 5px solid #39264D; }
+    border-top: 5px solid #602699; }
     /* line 29, ../sass/04modules/team.scss */
     #team article .staff-header {
       display: block;
@@ -869,7 +883,7 @@ header {
             background-image: url("../img/graphics/up-arrow-2x.png"); } }
       /* line 43, ../sass/04modules/team.scss */
       #team article .staff-header h3 {
-        color: #39264D;
+        color: #312340;
         margin-bottom: .375em; }
       /* line 47, ../sass/04modules/team.scss */
       #team article .staff-header h4 {
@@ -879,18 +893,18 @@ header {
         text-transform: uppercase; }
       /* line 52, ../sass/04modules/team.scss */
       #team article .staff-header:hover {
-        background-color: white; }
+        background-color: #d4b6f2; }
         /* line 54, ../sass/04modules/team.scss */
         #team article .staff-header:hover h3 {
-          color: #52376f; }
+          color: #602699; }
         /* line 57, ../sass/04modules/team.scss */
         #team article .staff-header:hover h4 {
-          color: #ad8fd7; }
+          color: #602699; }
     /* line 62, ../sass/04modules/team.scss */
     #team article .bio {
       display: none;
       padding: 0 5.4em 1.8em 2.4em;
-      border-top: 1px solid #e6e6e6; }
+      border-top: 1px solid #f2f2f2; }
 
 /**************************************************
  PUBLICATIONS SECTION STYLES
@@ -926,7 +940,7 @@ header {
       background-size: 400px 400px; } }
   /* line 17, ../sass/04modules/publications.scss */
   #pub h1 {
-    color: #39264D; }
+    color: #602699; }
   /* line 22, ../sass/04modules/publications.scss */
   #pub article ol {
     width: 70em;
@@ -938,7 +952,7 @@ header {
     font-size: 1.7rem;
     margin: 1em 0 0;
     padding-top: 1em;
-    border-top: 1px solid #E4DAF2; }
+    border-top: 1px solid #dfd3eb; }
 
 /**************************************************
  CONTACT SECTION STYLES
@@ -946,15 +960,15 @@ header {
 /* line 5, ../sass/04modules/contact.scss */
 #contact {
   padding-bottom: 9em;
-  background-color: #39264D;
-  border-top: 20px solid #E4DAF2; }
+  background-color: #312340;
+  border-top: 20px solid #d4b6f2; }
   /* line 13, ../sass/04modules/contact.scss */
-  #contact h1 {
+  #contact h2 {
     float: left;
     margin-bottom: 0;
     color: #fff; }
     /* line 17, ../sass/04modules/contact.scss */
-    #contact h1:after {
+    #contact h2:after {
       display: none; }
   /* line 21, ../sass/04modules/contact.scss */
   #contact .locations {
@@ -968,12 +982,12 @@ header {
   /* line 30, ../sass/04modules/contact.scss */
   .location-info h4 {
     padding: .5em .375em .625em;
-    color: #39264D; }
+    color: #312340; }
   /* line 34, ../sass/04modules/contact.scss */
   .location-info address, .location-info p {
     margin: 3px 0 0;
     padding: .5em .75em;
-    background-color: #e6e6e6; }
+    background-color: #f2f2f2; }
     /* line 38, ../sass/04modules/contact.scss */
     .location-info address span, .location-info p span {
       color: #666; }
@@ -991,8 +1005,8 @@ header {
 footer {
   padding-top: 2.4em;
   padding-bottom: 2.4em;
-  background-color: #130d1a;
-  color: #999; }
+  background-color: #18111f;
+  color: #fff; }
   /* line 13, ../sass/04modules/footer.scss */
   footer p {
     font-size: 14px;

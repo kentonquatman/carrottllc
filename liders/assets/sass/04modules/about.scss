@@ -9,12 +9,17 @@
     @extend %site-col;
     padding: 0 6em;
     p {
-      @include font-size(19);
+      @include font-size(18);
+      font-weight: 300;
       text-align: justify;
+      line-height: 1.8;
       span {
         @include font-size(30);
-        margin-left: -.75em;
+        margin-left: -.875em;
+        margin-right: .125em;
         color: $lt-purple;
+        font-family: $headline-font;
+        line-height: normal;
       }
     }
   }
