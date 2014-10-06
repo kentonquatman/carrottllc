@@ -511,29 +511,40 @@ header {
       background-image: url("../img/illustrations/help-building-01-2x.png");
       background-size: 240px 240px; } }
   /* line 20, ../sass/04modules/header.scss */
+  header .header-group {
+    float: left; }
+    /* line 22, ../sass/04modules/header.scss */
+    header .header-group small {
+      font-size: 14px;
+      font-size: 1.4rem;
+      display: block;
+      color: #999;
+      font-style: italic;
+      font-weight: 300; }
+  /* line 30, ../sass/04modules/header.scss */
   header h1 {
-    float: left;
     overflow: hidden;
     height: 0;
     width: 290px;
+    margin-bottom: .375em;
     padding-top: 60px;
     background: url("../img/logo/liders-logo.png") 0 0 no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi) {
-      /* line 20, ../sass/04modules/header.scss */
+      /* line 30, ../sass/04modules/header.scss */
       header h1 {
         background-image: url("../img/logo/liders-logo-2x.png");
         background-size: 290px 60px; } }
-    /* line 31, ../sass/04modules/header.scss */
+    /* line 41, ../sass/04modules/header.scss */
     header h1:after {
       display: none; }
-  /* line 35, ../sass/04modules/header.scss */
+  /* line 45, ../sass/04modules/header.scss */
   header aside {
-    margin-top: -1em;
-    margin-left: 324px;
-    padding: 1.75em 0 1.5em 3em;
+    margin-top: -1.2em;
+    margin-left: 326px;
+    padding: 2.4em 3em;
     border-left: 1px solid #f2f2f2;
     text-align: left; }
-    /* line 41, ../sass/04modules/header.scss */
+    /* line 51, ../sass/04modules/header.scss */
     header aside p {
       font-size: 16px;
       font-size: 1.6rem;
@@ -541,7 +552,7 @@ header {
       color: #999;
       font-weight: 300;
       line-height: 1.8; }
-  /* line 49, ../sass/04modules/header.scss */
+  /* line 59, ../sass/04modules/header.scss */
   header nav {
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -554,7 +565,7 @@ header {
     padding: 0 9em;
     background-color: #fff;
     border-top: 1px solid #f2f2f2; }
-    /* line 58, ../sass/04modules/header.scss */
+    /* line 68, ../sass/04modules/header.scss */
     header nav.sticky {
       -moz-box-shadow: rgba(26, 26, 26, 0.5) 0 0 30px;
       -webkit-box-shadow: rgba(26, 26, 26, 0.5) 0 0 30px;
@@ -564,22 +575,22 @@ header {
       top: 0;
       bottom: auto;
       border-top: none; }
-      /* line 65, ../sass/04modules/header.scss */
+      /* line 75, ../sass/04modules/header.scss */
       .ltie9 header nav.sticky {
         border-bottom: 1px solid #999; }
-    /* line 69, ../sass/04modules/header.scss */
+    /* line 79, ../sass/04modules/header.scss */
     header nav ol {
       overflow: hidden;
       margin-top: 0;
       margin-bottom: 0;
       list-style: none; }
-      /* line 75, ../sass/04modules/header.scss */
+      /* line 85, ../sass/04modules/header.scss */
       .flexbox header nav ol {
         display: -webkit-flex;
         display: flex;
         -webkit-justify-content: space-between;
         justify-content: space-between; }
-    /* line 80, ../sass/04modules/header.scss */
+    /* line 90, ../sass/04modules/header.scss */
     header nav li {
       display: inline-block;
       vertical-align: middle;
@@ -591,19 +602,19 @@ header {
       padding-top: 1.25em;
       margin: 0 0 0 2em;
       -webkit-font-smoothing: antialiased; }
-      /* line 86, ../sass/04modules/header.scss */
+      /* line 96, ../sass/04modules/header.scss */
       header nav li.about {
         margin-left: 0; }
-      /* line 89, ../sass/04modules/header.scss */
+      /* line 99, ../sass/04modules/header.scss */
       .flexbox header nav li {
         margin: 0; }
-    /* line 93, ../sass/04modules/header.scss */
+    /* line 103, ../sass/04modules/header.scss */
     header nav a {
       display: block;
       height: 2.5em;
       color: #999;
       font-family: "Montserrat", "Helvetica Neue", Helmet, Freesans, sans-serif; }
-      /* line 98, ../sass/04modules/header.scss */
+      /* line 108, ../sass/04modules/header.scss */
       header nav a:hover {
         border-bottom: 5px solid #602699;
         color: #602699; }

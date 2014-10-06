@@ -9,7 +9,7 @@ var Site = window.Site || {};
     // STICKY NAV BAR
 		$(function() {
 		  function stickyNav() {
-		    if ($(window).scrollTop() >= 305) {
+		    if ($(window).scrollTop() >= 301) {
 					$('header nav').addClass('sticky');
 					$('.top-button').removeClass('hide');
 		    }
