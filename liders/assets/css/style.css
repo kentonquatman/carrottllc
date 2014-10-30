@@ -974,40 +974,31 @@ header {
   background-color: #312340;
   border-top: 20px solid #d4b6f2; }
   /* line 13, ../sass/04modules/contact.scss */
-  #contact h2 {
-    float: left;
-    margin-bottom: 0;
+  #contact h1 {
     color: #fff; }
-    /* line 17, ../sass/04modules/contact.scss */
-    #contact h2:after {
-      display: none; }
-  /* line 21, ../sass/04modules/contact.scss */
-  #contact .locations {
-    margin-left: 24em; }
 
-/* line 26, ../sass/04modules/contact.scss */
+/* line 18, ../sass/04modules/contact.scss */
 .location-info {
-  width: 48%;
+  float: left;
+  width: 31%;
+  margin-left: 3.5%;
   padding: .6em;
   background-color: #fff; }
-  /* line 30, ../sass/04modules/contact.scss */
+  /* line 24, ../sass/04modules/contact.scss */
   .location-info h4 {
     padding: .5em .375em .625em;
     color: #312340; }
-  /* line 34, ../sass/04modules/contact.scss */
+  /* line 28, ../sass/04modules/contact.scss */
   .location-info address, .location-info p {
     margin: 3px 0 0;
     padding: .5em .75em;
     background-color: #f2f2f2; }
-    /* line 38, ../sass/04modules/contact.scss */
+    /* line 32, ../sass/04modules/contact.scss */
     .location-info address span, .location-info p span {
       color: #666; }
-  /* line 42, ../sass/04modules/contact.scss */
-  .location-info.princeton {
-    float: left; }
-  /* line 45, ../sass/04modules/contact.scss */
-  .location-info.london {
-    float: right; }
+  /* line 36, ../sass/04modules/contact.scss */
+  .location-info.chicago {
+    margin-left: 0; }
 
 /**************************************************
  FOOTER STYLES

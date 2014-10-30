@@ -10,21 +10,15 @@
     @extend %clearfix;
     @extend %site-col;
   }
-  h2 {
-    @include float;
-    margin-bottom: 0;
+  h1 {
     color: $white;
-    &:after {
-      display: none;
-    }
-  }
-  .locations {
-    margin-left: 24em;
   }
 }
 
 .location-info {
-  width: 48%;
+  @include float;
+  width: 31%;
+  margin-left: 3.5%;
   padding: .6em;
   background-color: $white;
   h4 {
@@ -39,10 +33,7 @@
       color: $dk-gray;
     }
   }
-  &.princeton {
-    @include float;
-  }
-  &.london {
-    @include float(right);
+  &.chicago {
+    margin-left: 0;
   }
 }
